@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Poiret+One&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
+
+@media only screen and (min-width: 2000px) {
+    :root {
+        --rem05: 1rem;
+        --rem1: 2rem;
+        --rem105: 3rem;
+        --rem2: 4rem;
+        --rem3: 6rem;
+        --rem35: 7rem;
+        --rem4: 8rem;
+        --rem5: 6rem;
+    }
+}
+@media only screen and (max-width: 1999px) {
+    :root {
+        --rem05: 0.75rem;
+        --rem1: 1.5rem;
+        --rem105: 2.25rem;
+        --rem2: 3rem;
+        --rem3: 4.5rem;
+        --rem35: 5rem;
+        --rem4: 6rem;
+        --rem5: 7.5rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    :root {
+        --rem05: 0.5rem;
+        --rem1: 1rem;
+        --rem105: 1.5rem;
+        --rem2: 2rem;
+        --rem3: 3rem;
+        --rem35: 3.5rem;
+        --rem4: 4rem;
+        --rem5: 5rem;
+    }
+}
+@media only screen and (max-width: 1365px) {
+    :root {
+        --rem05: 0.4rem;
+        --rem1: 0.8rem;
+        --rem105: 1.2rem;
+        --rem2: 1.6rem;
+        --rem3: 2.4rem;
+        --rem35: 2.8rem;
+        --rem4: 3.2rem;
+        --rem5: 4rem;
+    }
+}
+@media only screen and (max-width: 975px) {
+    :root {
+        --rem05: 0.4rem;
+        --rem1: 0.8rem;
+        --rem105: 1.2rem;
+        --rem2: 1.6rem;
+        --rem3: 2.4rem;
+        --rem35: 2.8rem;
+        --rem4: 3.2rem;
+        --rem5: 4rem;
+    }
+    body .ctext {
+        font-size: calc(var(--rem1) * 1);
+    }
+
+}
+@media only screen and (max-width: 807px) {
+    :root {
+        --rem05: 0.4rem;
+        --rem1: 0.8rem;
+        --rem105: 1.2rem;
+        --rem2: 1.6rem;
+        --rem3: 2.4rem;
+        --rem35: 2.8rem;
+        --rem4: 3.2rem;
+        --rem5: 4rem;
+    }
+    body .ctext {
+        font-size: calc(var(--rem1) * .8);
+    }
+
+}
+@media only screen and (max-width: 708px) {
+    :root {
+        --rem05: 0.4rem;
+        --rem1: 0.8rem;
+        --rem105: 1.2rem;
+        --rem2: 1.6rem;
+        --rem3: 2.4rem;
+        --rem35: 2.8rem;
+        --rem4: 3.2rem;
+        --rem5: 4rem;
+    }
+    body .clients {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media only screen and (max-width: 650px) {
+    :root {
+        --rem05: 0.3rem;
+        --rem1: 0.65rem;
+        --rem105: 0.85rem;
+        --rem2: 1.2rem;
+        --rem3: 1.8rem;
+        --rem35: 2.1rem;
+        --rem4: 2.6rem;
+        --rem5: 3rem;
+    }
+    body .ctext {
+        font-size: calc(var(--rem1) *1.1);
+    }
+
+}
+@media only screen and (max-width: 500px) {
+    :root {
+        --rem05: 0.3rem;
+        --rem1: 0.65rem;
+        --rem105: 0.85rem;
+        --rem2: 1.2rem;
+        --rem3: 1.8rem;
+        --rem35: 2.1rem;
+        --rem4: 2.6rem;
+        --rem5: 3rem;
+    }
+    body .clients {
+        grid-template-columns: repeat(1, 1fr);
+    }
+    body .ctext {
+        font-size: calc(var(--rem1) * 1.6);
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    :root {
+        --rem05: 0.3rem;
+        --rem1: 0.65rem;
+        --rem105: 0.85rem;
+        --rem2: 1.2rem;
+        --rem3: 1.8rem;
+        --rem35: 2.1rem;
+        --rem4: 2.6rem;
+        --rem5: 3rem;
+    }
+    body .ctext {
+        font-size: calc(var(--rem1) * 1.3);
+    }
+
+}
+:root {
+    --black: rgb(26, 24, 24);
+    --black2: rgb(48, 43, 43);
+    --gold: rgb(219, 216, 28);
+}
+
+.clientscont {
+    text-align: center;
+    width: 90%;
+    margin: auto;
+font-family: 'El Messiri', sans-serif;
+    font-weight: 500;
+    margin-top: var(--rem1);
+    margin-bottom: var(--rem2);
+    font-size: var(--rem1);
+}
+.clientscont h1 {
+color: white;
+}
+
+.clients {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: auto;
+    text-align: center;
+    width: 90%;
+}
+
+.ccard {
+    width: 80%;
+    position: relative;
+    border-radius: 5%;
+    border: 2px solid white;
+    box-shadow: calc(var(--rem05) * 1) var(--rem05) var(--rem05) black;
+    margin: 5%;
+    margin-top: var(--rem1);
+    margin-bottom: var(--rem1);
+}
+
+.ccard img {
+    width: 100%;
+    height: 100%;
+    z-index: 5;
+    border-radius: 5%;
+}
+
+.overlay {
+    display: flex;
+    flex-direction: column-reverse;
+    z-index: 6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgb(247, 192, 74 ,.7);
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(0);
+    -ms-transform: scale(0);
+    transform: scaleY(0);
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    border-radius: 5%;
+}
+
+.ccard:hover .overlay {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+.ccard:hover .ctext {
+    display: block;
+}
+
+.ctext {
+    color: var(--black2);
+    font-size: calc(var(--rem1) * 1.2);
+font-family: 'El Messiri', sans-serif;
+    font-weight: 600;
+    display: none;
+    transition-delay: 0.5s;
+    transition-timing-function: ease-in;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.ctext p {
+    padding: var(--rem05);
+    vertical-align: bottom;
+    margin: 0;
+}

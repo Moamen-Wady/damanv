@@ -1,0 +1,214 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
+
+@media only screen and (min-width: 2000px) {
+    :root {
+        --rem05: 1rem;
+        --rem1: 2rem;
+        --rem105: 3rem;
+        --rem2: 4rem;
+        --rem3: 6rem;
+        --rem35: 7rem;
+        --rem4: 8rem;
+        --rem5: 6rem;
+    }
+}
+@media only screen and (max-width: 1999px) {
+    :root {
+        --rem05: 0.75rem;
+        --rem1: 1.5rem;
+        --rem105: 2.25rem;
+        --rem2: 3rem;
+        --rem3: 4.5rem;
+        --rem35: 5rem;
+        --rem4: 6rem;
+        --rem5: 7.5rem;
+    }
+}
+@media only screen and (max-width: 1620px) {
+    :root {
+        --rem05: 0.5rem;
+        --rem1: 1rem;
+        --rem105: 1.5rem;
+        --rem2: 2rem;
+        --rem3: 3rem;
+        --rem35: 3.5rem;
+        --rem4: 4rem;
+        --rem5: 5rem;
+    }
+}
+@media only screen and (max-width: 1365px) {
+    :root {
+        --rem05: 0.4rem;
+        --rem1: 0.8rem;
+        --rem105: 1.2rem;
+        --rem2: 1.6rem;
+        --rem3: 2.4rem;
+        --rem35: 2.8rem;
+        --rem4: 3.2rem;
+        --rem5: 4rem;
+    }
+}
+@media only screen and (max-width: 807px) {
+    :root {
+        --rem05: 0.4rem;
+        --rem1: 0.8rem;
+        --rem105: 1.2rem;
+        --rem2: 1.6rem;
+        --rem3: 2.4rem;
+        --rem35: 2.8rem;
+        --rem4: 3.2rem;
+        --rem5: 4rem;
+    }
+}
+@media only screen and (max-width: 650px) {
+    :root {
+        --rem05: 0.3rem;
+        --rem1: 0.65rem;
+        --rem105: 0.85rem;
+        --rem2: 1.2rem;
+        --rem3: 1.8rem;
+        --rem35: 2.1rem;
+        --rem4: 2.6rem;
+        --rem5: 3rem;
+    }
+}
+
+@media only screen and (max-width: 370px) {
+    :root {
+        --rem05: 0.3rem;
+        --rem1: 0.65rem;
+        --rem105: 0.85rem;
+        --rem2: 1.2rem;
+        --rem3: 1.8rem;
+        --rem35: 2.1rem;
+        --rem4: 2.6rem;
+        --rem5: 3rem;
+    }
+}
+@media only screen and (max-width: 321px) {
+    :root {
+        --rem05: 0.3rem;
+        --rem1: 0.65rem;
+        --rem105: 0.85rem;
+        --rem2: 1.2rem;
+        --rem3: 1.8rem;
+        --rem35: 2.1rem;
+        --rem4: 2.6rem;
+        --rem5: 3rem;
+    }
+}
+
+:root {
+    --black: rgb(26, 24, 24);
+    --black2: rgb(48, 43, 43);
+    --gold: rgb(219, 216, 28);
+}
+
+.head {
+    height: calc(var(--rem4) * 8);
+    position: relative;
+    width: 100%;
+    z-index: 5;
+    overflow: hidden;
+}
+
+.txtx {
+    z-index: 3;
+    width: max-content;
+    color: white;
+    text-align: center;
+    text-align-last: center;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: var(--rem35);
+    font-family: "El Messiri", sans-serif;
+    font-weight: bold;
+    text-transform: capitalize;
+    transition-property: opacity;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+    text-shadow: calc(var(--rem05) * -1) var(--rem05) var(--rem05) black;
+}
+.txtx strong {
+    color: goldenrod;
+    font-size: var(--rem4);
+    stroke: black;
+    text-shadow: calc(var(--rem05) * -1) var(--rem05) var(--rem05) black;
+    transition-property: opacity;
+    transition-delay: 1s;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+.mid {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    opacity: 0.5;
+}
+
+.bg {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0;
+    z-index: 1;
+    transition-delay: 0s;
+    transition-duration: 1s;
+    transition-timing-function: cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
+.bg1 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 0%;
+    z-index: 1;
+}
+
+.slz {
+    width: 100%;
+    overflow: hidden;
+}
+
+.lnkbtn {
+    border-radius: 5%;
+    background: #f7c04a;
+    color: white;
+    padding: var(--rem1);
+    text-decoration: none;
+}
+
+.lnkbtn:hover {
+    background-color: yellow;
+}
+
+.come {
+    animation: 1s forwards come;
+}
+.go {
+    animation: 1s forwards go;
+}
+
+@keyframes come {
+    from {
+        right: -100%;
+    }
+    to {
+        right: 0;
+    }
+}
+@keyframes go {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
