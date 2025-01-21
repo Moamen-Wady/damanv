@@ -8,8 +8,8 @@ $residence = $_POST['residence'];
 $notes = $_POST['notes'];
 
 // Set recipient email address and email subject
-$to = "info@damansolutions.com";
-$subject = "New form submission: $name";
+$to = "moamen.wady@gmail.com";
+$subject = "New daman glitch form submission: $name";
 
 // Build email body with form data
 $body = "Name: $name\n";
