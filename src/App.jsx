@@ -8,7 +8,7 @@ import Services from "./Services";
 import Aboutus from "./about";
 import ContactUs from "./ContactUs";
 import Errorp from "./Errorp";
-import Homea from "./Homea";
+import Homea from "./homea";
 import Servicesa from "./servicesa";
 import Aboutusa from "./abouta";
 import ContactUsa from "./ContactUsa";
