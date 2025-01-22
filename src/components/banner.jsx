@@ -10,7 +10,7 @@ export default function Banner() {
       document.getElementById(`${x[i]}`).style.opacity = 0;
     }
     document.getElementById(`${x[z]}`).style.opacity = 1;
-    setZ((z += 1));
+    setZ((prev) => (prev += 1));
     if (z > x.length - 1) {
       setZ(0);
     }
