@@ -1,42 +1,19 @@
 import "./styles/services.css";
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Clients from "./components/clients";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import Prefooter from "./components/prefooter";
-import Banner from "./components/banner";
-import Ul from "./components/ul";
-
-import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-export default function Services() {
-  function scrollToHash() {
-    const id = window.location.hash.substr(1);
-
-    if (id) {
-      const anchor = document.getElementById(id);
-
-      if (anchor) {
-        anchor.scrollIntoView();
-      }
-    }
-  }
-
+export default function Services({ scrollToHash }) {
   useEffect(() => scrollToHash(), []);
   return (
     <>
-      <Navbar />
-      <Ul />
-      <Banner />
-
-      <div className=" servcont ">
+      <div className=" servcont">
         <AnimationOnScroll animateOnce={true} animateIn="animate__backInDown">
           <h1> How Can We Help You?</h1>
         </AnimationOnScroll>
 
-        <div className=" serv ">
-          <div className=" telts ">
+        <div className=" serv">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -44,7 +21,7 @@ export default function Services() {
               <div>
                 <picture>
                   <source srcSet="5tama.webp" type="image/webp" />
-                  <img src="5tama.png" alt="" />
+                  <img src="5tama.png" loading="lazy" alt="" />
                 </picture>
                 <h1>DED Services</h1>
                 <p>
@@ -54,7 +31,7 @@ export default function Services() {
               </div>
             </AnimationOnScroll>
           </div>
-          <div className=" telts ">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -62,7 +39,7 @@ export default function Services() {
               <div>
                 <picture>
                   <source srcSet="visa.webp" type="image/webp" />
-                  <img src="visa.png" alt="" />
+                  <img src="visa.png" loading="lazy" alt="" />
                 </picture>
                 <h1>Visa Services In UAE</h1>
                 <p>
@@ -72,7 +49,7 @@ export default function Services() {
               </div>
             </AnimationOnScroll>
           </div>
-          <div className=" telts ">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -81,7 +58,7 @@ export default function Services() {
               <div>
                 <picture>
                   <source srcSet="hi.webp" type="image/webp" />
-                  <img src="hi.png" alt="" />
+                  <img src="hi.png" loading="lazy" alt="" />
                 </picture>
                 <h1>UAE Health Insurance</h1>
                 <p>
@@ -92,7 +69,7 @@ export default function Services() {
             </AnimationOnScroll>
           </div>
 
-          <div className=" telts ">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -101,7 +78,7 @@ export default function Services() {
               <div>
                 <picture>
                   <source srcSet="tasheel.webp" type="image/webp" />
-                  <img src="tasheel.png" alt="" />
+                  <img src="tasheel.png" loading="lazy" alt="" />
                 </picture>
                 <h1>Tasheel Services</h1>
                 <p>
@@ -112,7 +89,7 @@ export default function Services() {
             </AnimationOnScroll>
           </div>
 
-          <div className=" telts ">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -121,7 +98,7 @@ export default function Services() {
               <div>
                 <picture>
                   <source srcSet="bs.webp" type="image/webp" />
-                  <img src="bs.png" alt="" />
+                  <img src="bs.png" loading="lazy" alt="" />
                 </picture>
                 <h1>Business Setup</h1>
                 <p>
@@ -131,7 +108,7 @@ export default function Services() {
               </div>
             </AnimationOnScroll>
           </div>
-          <div className=" telts ">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -140,7 +117,7 @@ export default function Services() {
               <div>
                 <picture>
                   <source srcSet="id.webp" type="image/webp" />
-                  <img src="id.png" alt="" />
+                  <img src="id.png" loading="lazy" alt="" />
                 </picture>
                 <h1>UAE ID Services</h1>
                 <p>
@@ -151,10 +128,11 @@ export default function Services() {
             </AnimationOnScroll>
           </div>
         </div>
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
+          <Clients />
+        </AnimationOnScroll>
       </div>
       <hr style={{ width: "80%" }} />
-      <Prefooter />
-      <Footer />
     </>
   );
 }

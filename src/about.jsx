@@ -1,35 +1,14 @@
-import React, { useEffect } from "react";
+import  { useEffect } from "react";
 import "./styles/about.css";
 import Clients from "./components/clients";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import Prefooter from "./components/prefooter";
-import Banner from "./components/banner";
-import Ul from "./components/ul";
-import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-export default function Aboutus() {
-  function scrollToHash() {
-    const id = window.location.hash.substr(1);
-
-    if (id) {
-      const anchor = document.getElementById(id);
-
-      if (anchor) {
-        anchor.scrollIntoView();
-      }
-    }
-  }
+export default function Aboutus({ scrollToHash }) {
 
   useEffect(() => scrollToHash(), []);
 
   return (
     <>
-      <Navbar />
-      <Ul />
-      <Banner />
-
       <div className="aboutcont">
         <div className="first x8">
           <AnimationOnScroll
@@ -134,12 +113,10 @@ export default function Aboutus() {
             </div>
           </AnimationOnScroll>
         </div>
-        <AnimationOnScroll animateOnce={true} animateIn="animate__jackInTheBox">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
           <Clients />
         </AnimationOnScroll>
       </div>
-      <Prefooter />
-      <Footer />
     </>
   );
 }

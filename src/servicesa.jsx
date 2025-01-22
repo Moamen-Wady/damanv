@@ -1,41 +1,19 @@
 import "./styles/servicesa.css";
-import React, { useEffect } from "react";
-import "animate.css/animate.min.css";
+import { useEffect } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Clientsa from "./components/clientsa";
-import Navbara from "./components/navbara";
-import Footera from "./components/footera";
-import Prefootera from "./components/prefootera";
-import Bannera from "./components/bannera";
-import Ula from "./components/ula";
 
-export default function Servicesa() {
-  function scrollToHash() {
-    const id = window.location.hash.substr(1);
-
-    if (id) {
-      const anchor = document.getElementById(id);
-
-      if (anchor) {
-        anchor.scrollIntoView();
-      }
-    }
-  }
-
+export default function Servicesa({ scrollToHash }) {
   useEffect(() => scrollToHash(), []);
   return (
     <>
-      <Navbara />
-      <Ula />
-      <Bannera />
-
-      <div className="aservcont ">
+      <div className="aservcont">
         <AnimationOnScroll animateOnce={true} animateIn="animate__backInDown">
           <h1> كيف يمكننا مساعدتك؟</h1>
         </AnimationOnScroll>
 
-        <div className=" aserv ">
-          <div className=" atelts ">
+        <div className=" aserv">
+          <div className=" atelts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -43,14 +21,14 @@ export default function Servicesa() {
               <div>
                 <picture>
                   <source srcSet="5tama.webp" type="image/webp" />
-                  <img src="5tama.png" alt="" />
+                  <img src="5tama.png" loading="lazy" alt="" />
                 </picture>
                 <h1>خدمات د.أ.أ </h1>
                 <p>د.أ.أ اختصار دائرة التنمية الاقتصادية ، دبي.</p>
               </div>
             </AnimationOnScroll>
           </div>
-          <div className=" atelts ">
+          <div className=" atelts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -58,7 +36,7 @@ export default function Servicesa() {
               <div>
                 <picture>
                   <source srcSet="visa.webp" type="image/webp" />
-                  <img src="visa.png" alt="" />
+                  <img src="visa.png" loading="lazy" alt="" />
                 </picture>
                 <h1>خدمات الفيزا في الامارات </h1>
                 <p>
@@ -68,7 +46,7 @@ export default function Servicesa() {
               </div>
             </AnimationOnScroll>
           </div>
-          <div className=" atelts ">
+          <div className=" atelts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -77,7 +55,7 @@ export default function Servicesa() {
               <div>
                 <picture>
                   <source srcSet="hi.webp" type="image/webp" />
-                  <img src="hi.png" alt="" />
+                  <img src="hi.png" loading="lazy" alt="" />
                 </picture>
                 <h1>التأمين الصحي في الامارات</h1>
                 <p>
@@ -88,7 +66,7 @@ export default function Servicesa() {
             </AnimationOnScroll>
           </div>
 
-          <div className=" atelts ">
+          <div className=" atelts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -97,7 +75,7 @@ export default function Servicesa() {
               <div>
                 <picture>
                   <source srcSet="tasheel.webp" type="image/webp" />
-                  <img src="tasheel.png" alt="" />
+                  <img src="tasheel.png" loading="lazy" alt="" />
                 </picture>
                 <h1>خدمات تسهيل</h1>
                 <p>
@@ -108,7 +86,7 @@ export default function Servicesa() {
             </AnimationOnScroll>
           </div>
 
-          <div className=" atelts ">
+          <div className=" atelts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -117,7 +95,7 @@ export default function Servicesa() {
               <div>
                 <picture>
                   <source srcSet="bs.webp" type="image/webp" />
-                  <img src="bs.png" alt="" />
+                  <img src="bs.png" loading="lazy" alt="" />
                 </picture>
                 <h1>إعداد الأعمال</h1>
                 <p>
@@ -127,7 +105,7 @@ export default function Servicesa() {
               </div>
             </AnimationOnScroll>
           </div>
-          <div className=" atelts ">
+          <div className=" atelts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -136,7 +114,7 @@ export default function Servicesa() {
               <div>
                 <picture>
                   <source srcSet="id.webp" type="image/webp" />
-                  <img src="id.png" alt="" />
+                  <img src="id.png" loading="lazy" alt="" />
                 </picture>
                 <h1>خدمات الهوية الإماراتية</h1>
                 <p>
@@ -147,10 +125,11 @@ export default function Servicesa() {
             </AnimationOnScroll>
           </div>
         </div>
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
+          <Clientsa />
+        </AnimationOnScroll>
       </div>
       <hr style={{ width: "80%" }} />
-      <Prefootera />
-      <Footera />
     </>
   );
 }

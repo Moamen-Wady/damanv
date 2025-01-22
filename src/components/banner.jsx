@@ -1,12 +1,11 @@
-import React from "react";
 import "./banner.css";
 import { useState, useCallback } from "react";
 
 export default function Banner() {
-  var [z, setZ] = useState(0);
-  var i;
-  var x = [0, 1, 2];
-  const banner = () => {
+  const [z, setZ] = useState(0);
+  const x = [0, 1, 2];
+  let i;
+  function bannerAnim() {
     for (i = 0; i < x.length; i++) {
       document.getElementById(`${x[i]}`).style.opacity = 0;
     }
@@ -15,30 +14,30 @@ export default function Banner() {
     if (z > x.length - 1) {
       setZ(0);
     }
-  };
+  }
   useCallback(() => {
     setZ(0);
   }, []);
-  useCallback(setTimeout(banner, 3000));
+  useCallback(setTimeout(bannerAnim, 3000));
 
   return (
-    <header className="head ">
-      <div className="slz ">
+    <header className="head">
+      <div className="slz">
         <picture>
           <source srcSet="1.webp" type="image/webp" />
-          <img id={0} src="1.jpg" alt="" className="bg " />
+          <img id={0} src="1.jpg" alt="" className="bg" />
         </picture>
       </div>
-      <div className="slz ">
+      <div className="slz">
         <picture>
           <source srcSet="2.webp" type="image/webp" />
-          <img id={1} src="2.jpg" alt="" className="bg " />
+          <img id={1} src="2.jpg" alt="" className="bg" />
         </picture>
       </div>
-      <div className="slz ">
+      <div className="slz">
         <picture>
           <source srcSet="3.webp" type="image/webp" />
-          <img id={2} src="3.jpg" alt="" className="bg " />
+          <img id={2} src="3.jpg" alt="" className="bg" />
         </picture>
       </div>
     </header>

@@ -1,17 +1,16 @@
-import React from "react";
 import "./footer.css";
 import { Link } from "react-router-dom";
 
 export default function Footer() {
   return (
-    <footer className="ff ">
-      <div className="map ">
+    <footer className="ff">
+      <div className="map">
         <div className="xfc">
           <div className="container">
             <div className="form">
               <picture>
                 <source srcSet="logo.webp" type="image/webp" />
-                <img src="/logo.png" alt="" />
+                <img src="/logo.png" loading="lazy" alt="" />
               </picture>
               <p>Required Informations</p>
               <form action="submit.php" method="post" id="form">
@@ -69,22 +68,21 @@ export default function Footer() {
         ></iframe>
       </div>
 
-      <div className="xcon ">
-        <div className="portion ">
-          <div className="lgsf ">
+      <div className="xcon">
+        <div className="portion">
+          <div className="lgsf">
             <picture>
               <source srcSet="logo.webp" type="image/webp" />
-              <img className="imx " src="logo.png" alt="" />
+              <img className="imx" src="logo.png" loading="lazy" alt="" />
             </picture>
             <a
               href="https://www.facebook.com/damansolution?mibextid=LQQJ4d"
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="fb.webp" type="image/webp" />
-                <img src="fb.png" alt="" />
+                <img src="fb.png" loading="lazy" alt="" />
               </picture>
             </a>
             <a
@@ -92,10 +90,9 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="ig.webp" type="image/webp" />
-                <img src="ig.png" alt="" />
+                <img src="ig.png" loading="lazy" alt="" />
               </picture>
             </a>
             <a
@@ -103,10 +100,9 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="li.webp" type="image/webp" />
-                <img src="li.png" alt="" />
+                <img src="li.png" loading="lazy" alt="" />
               </picture>
             </a>
             <a
@@ -114,39 +110,38 @@ export default function Footer() {
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="tw.webp" type="image/webp" />
-                <img src="tw.png" alt="" />
+                <img src="tw.png" loading="lazy" alt="" />
               </picture>
             </a>
           </div>
 
-          <ul className="ful ">
-            <li className="xl ">
-              <Link to="/#mm" className="ll ">
+          <ul className="ful">
+            <li className="xl">
+              <Link to="/#mm" className="ll">
                 <p>Home</p>
               </Link>
             </li>
-            <li className="xl ">
-              <Link to="/Services#mm" className="ll ">
+            <li className="xl">
+              <Link to="/Services#mm" className="ll">
                 <p>Services</p>
               </Link>
             </li>
-            <li className="xl ">
-              <Link to="/Aboutus#mm" className="ll ">
+            <li className="xl">
+              <Link to="/Aboutus#mm" className="ll">
                 <p>About Us</p>
               </Link>
             </li>
-            <li className="xl ">
-              <Link to="/Contactus#mm" className="ll ">
+            <li className="xl">
+              <Link to="/Contactus#mm" className="ll">
                 <p>Contact Us Now !</p>
               </Link>
             </li>
           </ul>
         </div>
-        <div className="portion ">
-          <div className="contact ">
+        <div className="portion">
+          <div className="contact">
             <h1>Daman Solutions</h1>
             <p>
               We offer explicit services to establish and run your business in
@@ -156,21 +151,22 @@ export default function Footer() {
             <p>
               <picture>
                 <source srcSet="location.webp" type="image/webp" />
-                <img src="location.png" alt="location" /> Business Center 1, M
-                Floor , The Meydan Hotel, Nad Al Sheba, Dubai , U.A.E.
+                <img src="location.png" loading="lazy" alt="location" />{" "}
+                Business Center 1, M Floor , The Meydan Hotel, Nad Al Sheba,
+                Dubai , U.A.E.
               </picture>
             </p>
             <p>
               <picture>
                 <source srcSet="phone.webp" type="image/webp" />
-                <img src="phone.png" alt="phone" />
+                <img src="phone.png" loading="lazy" alt="phone" />
                 <a href="tel:0547807870">0547807870</a>
               </picture>
             </p>
             <p>
               <picture>
                 <source srcSet="mail.webp" type="image/webp" />
-                <img src="mail.png" alt="mail" />
+                <img src="mail.png" loading="lazy" alt="mail" />
                 <a href="mailto:Info@damansolutions.com">
                   Info@damansolutions.com
                 </a>

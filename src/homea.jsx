@@ -1,41 +1,20 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./styles/homea.css";
-import "./styles/contact.css";
-import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Clientsa from "./components/clientsa";
-import Navbara from "./components/navbara";
-import Footera from "./components/footera";
-import Prefootera from "./components/prefootera";
-import Bannera from "./components/bannera";
-import Ula from "./components/ula";
 
-export default function Homea() {
-  function scrollToHash() {
-    const id = window.location.hash.substr(1);
-
-    if (id) {
-      const anchor = document.getElementById(id);
-
-      if (anchor) {
-        anchor.scrollIntoView();
-      }
-    }
-  }
+export default function Homea({ scrollToHash }) {
 
   useEffect(() => scrollToHash(), []);
   return (
     <>
-      <Navbara />
-      <Ula />
-      <Bannera />
       <div className="a">
-        <div className="awhyuscont ">
+        <div className="awhyuscont">
           <AnimationOnScroll animateOnce={true} animateIn="animate__backInDown">
             <h1> وظفنا من اجل</h1>
           </AnimationOnScroll>
-          <div className="awhyus ">
-            <div className="atelt ">
+          <div className="awhyus">
+            <div className="atelt">
               <AnimationOnScroll
                 animateOnce={true}
                 animateIn="animate__slideInRight"
@@ -43,7 +22,11 @@ export default function Homea() {
                 <h1>التصاريح الأمنية</h1>
                 <picture>
                   <source srcSet="security1.webp" type="image/webp" />
-                  <img src="security1.png" alt="Security clearances" />
+                  <img
+                    src="security1.png"
+                    loading="lazy"
+                    alt="Security clearances"
+                  />
                 </picture>
                 <p>
                   مع فريقنا المؤهل نساعدك في جميع المعاملات لاستخراج التصاريح
@@ -52,7 +35,7 @@ export default function Homea() {
               </AnimationOnScroll>
             </div>
 
-            <div className="atelt ">
+            <div className="atelt">
               <AnimationOnScroll
                 animateOnce={true}
                 animateIn="animate__slideInRight"
@@ -61,7 +44,11 @@ export default function Homea() {
                 <h1>إنشاء مرفق</h1>
                 <picture>
                   <source srcSet="facility.webp" type="image/webp" />
-                  <img src="facility.jpg" alt="Facility establishing" />
+                  <img
+                    src="facility.jpg"
+                    loading="lazy"
+                    alt="Facility establishing"
+                  />
                 </picture>
                 <p>
                   ضمن هذه الخطوة ، يجب توقيع المستندات المطلوبة لإتمام المعاملة
@@ -70,7 +57,7 @@ export default function Homea() {
               </AnimationOnScroll>
             </div>
 
-            <div className="atelt ">
+            <div className="atelt">
               <AnimationOnScroll
                 animateOnce={true}
                 animateIn="animate__slideInRight"
@@ -79,7 +66,11 @@ export default function Homea() {
                 <h1>الاقامة</h1>
                 <picture>
                   <source srcSet="residence1.webp" type="image/webp" />
-                  <img src="residence1.png" alt="residence visa extracting" />
+                  <img
+                    src="residence1.png"
+                    loading="lazy"
+                    alt="residence visa extracting"
+                  />
                 </picture>
                 <p>
                   بمساعدة فريقنا ، نقوم بتسريع عملية استخراج الإقامة والتأشيرات
@@ -90,7 +81,7 @@ export default function Homea() {
           </div>
           <hr style={{ width: "80%" }} />
         </div>
-        <div className=" avismis ">
+        <div className=" avismis">
           <div className="anos1">
             <h1>عن ضمان</h1>
             <p>خدمات إعداد الحكومة والأعمال في دبي</p>
@@ -110,15 +101,14 @@ export default function Homea() {
             </p>
           </div>
           <div className="nos2">
-            
             <picture>
               <source srcSet="5.webp" type="image/webp" />
-              <img src="5.jpg" alt="" />
+              <img src="5.jpg" loading="lazy" alt="" />
             </picture>
           </div>
         </div>
         <hr style={{ width: "80%", color: "white" }} />
-        <div className=" avismis ">
+        <div className=" avismis">
           <div className="anos1">
             <h1>ابدأ معنا</h1>
             <p>اعداد الأعمال الجديدة في دبي</p>
@@ -139,20 +129,23 @@ export default function Homea() {
             </p>
           </div>
           <div className="nos2">
-            
             <picture>
               <source srcSet="6.webp" type="image/webp" />
-              <img src="6.jpg" alt="" />
+              <img src="6.jpg" loading="lazy" alt="" />
             </picture>
           </div>
         </div>
         <hr style={{ width: "80%", color: "white" }} />
 
         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
-          <div className="aidea ">
+          <div className="aidea">
             <picture>
               <source srcSet="idea.webp" type="image/webp" />
-              <img src="idea.jpg" alt="Motivational Business Quote" />
+              <img
+                src="idea.jpg"
+                loading="lazy"
+                alt="Motivational Business Quote"
+              />
             </picture>
             <p>
               <b>“</b>يستلزم الأمر فكرة وايمان والكثير من العمل الشاق , ولكن في
@@ -162,11 +155,11 @@ export default function Homea() {
         </AnimationOnScroll>
 
         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
-          <div className="avismis ">
-            <div className="anos ">
+          <div className="avismis">
+            <div className="anos">
               <picture>
                 <source srcSet="light.webp" type="image/webp" />
-                <img src="light.png" alt="" />
+                <img src="light.png" loading="lazy" alt="" />
               </picture>
               <h1>رؤيتنا</h1>
               <p>
@@ -180,10 +173,10 @@ export default function Homea() {
                 غير مسبوق في خدمة الأعمال وقطاعات الاستثمار.
               </p>
             </div>
-            <div className="anos ">
+            <div className="anos">
               <picture>
                 <source srcSet="target.webp" type="image/webp" />
-                <img src="target.png" alt="" />
+                <img src="target.png" loading="lazy" alt="" />
               </picture>
               <h1>مهمتنا</h1>
               <p>
@@ -200,13 +193,13 @@ export default function Homea() {
           </div>
           <hr style={{ width: "80%" }} />
         </AnimationOnScroll>
-        <div className="aservcont ">
+        <div className="aservcont">
           <AnimationOnScroll animateOnce={true} animateIn="animate__backInDown">
             <h1> كيف يمكننا مساعدتك؟</h1>
           </AnimationOnScroll>
 
-          <div className=" aserv ">
-            <div className=" atelts ">
+          <div className=" aserv">
+            <div className=" atelts">
               <AnimationOnScroll
                 animateOnce={true}
                 animateIn="animate__slideInRight"
@@ -214,14 +207,14 @@ export default function Homea() {
                 <div>
                   <picture>
                     <source srcSet="5tama.webp" type="image/webp" />
-                    <img src="5tama.png" alt="" />
+                    <img src="5tama.png" loading="lazy" alt="" />
                   </picture>
                   <h1>خدمات د.أ.أ </h1>
                   <p>د.أ.أ اختصار دائرة التنمية الاقتصادية ، دبي.</p>
                 </div>
               </AnimationOnScroll>
             </div>
-            <div className=" atelts ">
+            <div className=" atelts">
               <AnimationOnScroll
                 animateOnce={true}
                 animateIn="animate__slideInRight"
@@ -229,7 +222,7 @@ export default function Homea() {
                 <div>
                   <picture>
                     <source srcSet="visa.webp" type="image/webp" />
-                    <img src="visa.png" alt="" />
+                    <img src="visa.png" loading="lazy" alt="" />
                   </picture>
                   <h1>خدمات الفيزا في الامارات </h1>
                   <p>
@@ -239,7 +232,7 @@ export default function Homea() {
                 </div>
               </AnimationOnScroll>
             </div>
-            <div className=" atelts ">
+            <div className=" atelts">
               <AnimationOnScroll
                 animateOnce={true}
                 animateIn="animate__slideInRight"
@@ -248,7 +241,7 @@ export default function Homea() {
                 <div>
                   <picture>
                     <source srcSet="hi.webp" type="image/webp" />
-                    <img src="hi.png" alt="" />
+                    <img src="hi.png" loading="lazy" alt="" />
                   </picture>
                   <h1>التأمين الصحي في الامارات</h1>
                   <p>
@@ -259,7 +252,7 @@ export default function Homea() {
               </AnimationOnScroll>
             </div>
 
-            <div className=" atelts ">
+            <div className=" atelts">
               <AnimationOnScroll
                 animateOnce={true}
                 animateIn="animate__slideInRight"
@@ -268,7 +261,7 @@ export default function Homea() {
                 <div>
                   <picture>
                     <source srcSet="tasheel.webp" type="image/webp" />
-                    <img src="tasheel.png" alt="" />
+                    <img src="tasheel.png" loading="lazy" alt="" />
                   </picture>
                   <h1>خدمات تسهيل</h1>
                   <p>
@@ -279,7 +272,7 @@ export default function Homea() {
               </AnimationOnScroll>
             </div>
 
-            <div className=" atelts ">
+            <div className=" atelts">
               <AnimationOnScroll
                 animateOnce={true}
                 animateIn="animate__slideInRight"
@@ -288,7 +281,7 @@ export default function Homea() {
                 <div>
                   <picture>
                     <source srcSet="bs.webp" type="image/webp" />
-                    <img src="bs.png" alt="" />
+                    <img src="bs.png" loading="lazy" alt="" />
                   </picture>
                   <h1>إعداد الأعمال</h1>
                   <p>
@@ -298,7 +291,7 @@ export default function Homea() {
                 </div>
               </AnimationOnScroll>
             </div>
-            <div className=" atelts ">
+            <div className=" atelts">
               <AnimationOnScroll
                 animateOnce={true}
                 animateIn="animate__slideInRight"
@@ -307,7 +300,7 @@ export default function Homea() {
                 <div>
                   <picture>
                     <source srcSet="id.webp" type="image/webp" />
-                    <img src="id.png" alt="" />
+                    <img src="id.png" loading="lazy" alt="" />
                   </picture>
                   <h1>خدمات الهوية الإماراتية</h1>
                   <p>
@@ -320,7 +313,7 @@ export default function Homea() {
           </div>
         </div>
         <AnimationOnScroll animateOnce={true} animateIn="animate__backInRight">
-          <div className="aadvcont ">
+          <div className="aadvcont">
             <h1>لماذا تختارنا بالضبط؟</h1>
             <p>
               دبي لديها الكثير من الفرص التجارية. هناك العديد من الخيارات لبدء
@@ -337,12 +330,12 @@ export default function Homea() {
               الشركة.
             </p>
 
-            <div className="aadv ">
-              <div className="aadvgrid ">
+            <div className="aadv">
+              <div className="aadvgrid">
                 <div>
                   <picture>
                     <source srcSet="star.webp" type="image/webp" />
-                    <img src="star.png" alt="" />
+                    <img src="star.png" loading="lazy" alt="" />
                   </picture>
                   <p>
                     الخبرة <br /> <br /> نحن الاختيار المناسب لمشروعك. لدينا
@@ -350,10 +343,9 @@ export default function Homea() {
                   </p>
                 </div>
                 <div>
-                  
                   <picture>
                     <source srcSet="dollar.webp" type="image/webp" />
-                    <img src="dollar.png" alt="" />
+                    <img src="dollar.png" loading="lazy" alt="" />
                   </picture>
                   <p>
                     السعر <br /> <br /> نحن نقدم خدماتنا بسعر صادق لضمان قدرتنا
@@ -363,7 +355,7 @@ export default function Homea() {
                 <div>
                   <picture>
                     <source srcSet="ear.webp" type="image/webp" />
-                    <img src="ear.png" alt="" />
+                    <img src="ear.png" loading="lazy" alt="" />
                   </picture>
                   <p>
                     التواصل <br /> <br /> معنا ستسمع. نستمع إلى متطلبات عملائنا
@@ -373,7 +365,7 @@ export default function Homea() {
                 <div>
                   <picture>
                     <source srcSet="hand.webp" type="image/webp" />
-                    <img src="hand.png" alt="" />
+                    <img src="hand.png" loading="lazy" alt="" />
                   </picture>
                   <p>
                     التعاون <br /> <br /> نحن نهتم بعملك على أنه أعمالنا الخاصة.
@@ -387,12 +379,10 @@ export default function Homea() {
           </div>
         </AnimationOnScroll>
 
-        <AnimationOnScroll animateOnce={true} animateIn="animate__jackInTheBox">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
           <Clientsa />
         </AnimationOnScroll>
       </div>
-      <Prefootera />
-      <Footera />
     </>
   );
 }

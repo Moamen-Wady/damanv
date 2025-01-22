@@ -1,12 +1,12 @@
 body {
-    padding: 0;
-    margin: 0;
-    overflow: visible;
-    background-image: url("/bg.jpg");
-    background-attachment:fixed;
-    background-size: cover;
-    background-position: center;
+  padding: 0;
+  margin: 0;
+  overflow: visible;
+  background-image: url("/bg.jpg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 picture {
-    display: contents;
+  display: contents;
 }

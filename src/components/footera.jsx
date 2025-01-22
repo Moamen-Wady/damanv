@@ -1,17 +1,16 @@
-import React from "react";
 import "./footera.css";
 import { Link } from "react-router-dom";
 
 export default function Footera() {
   return (
-    <footer className="aff ">
-      <div className="amap ">
+    <footer className="aff">
+      <div className="amap">
         <div className="xfc">
           <div className="container">
             <div className="form">
               <picture>
                 <source srcSet="logo.webp" type="image/webp" />
-                <img src="/logo.png" alt="" />
+                <img src="/logo.png" loading="lazy" alt="" />
               </picture>
               <p>Required Informations</p>
               <form action="submit.php" method="post" id="form">
@@ -69,22 +68,21 @@ export default function Footera() {
           title="location"
         ></iframe>
       </div>
-      <div className="axcon ">
-        <div className="aportion ">
-          <div className="algsf ">
+      <div className="axcon">
+        <div className="aportion">
+          <div className="algsf">
             <picture>
               <source srcSet="logo.webp" type="image/webp" />
-              <img className="aimx " src="logo.png" alt="" />
+              <img className="aimx" src="logo.png" loading="lazy" alt="" />
             </picture>
             <a
               href="https://www.facebook.com/damansolution?mibextid=LQQJ4d"
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="fb.webp" type="image/webp" />
-                <img src="fb.png" alt="" />
+                <img src="fb.png" loading="lazy" alt="" />
               </picture>
             </a>
             <a
@@ -92,10 +90,9 @@ export default function Footera() {
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="ig.webp" type="image/webp" />
-                <img src="ig.png" alt="" />
+                <img src="ig.png" loading="lazy" alt="" />
               </picture>
             </a>
             <a
@@ -103,10 +100,9 @@ export default function Footera() {
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="li.webp" type="image/webp" />
-                <img src="li.png" alt="" />
+                <img src="li.png" loading="lazy" alt="" />
               </picture>
             </a>
             <a
@@ -114,39 +110,38 @@ export default function Footera() {
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="tw.webp" type="image/webp" />
-                <img src="tw.png" alt="" />
+                <img src="tw.png" loading="lazy" alt="" />
               </picture>
             </a>
           </div>
 
-          <ul className="aful ">
-            <li className="axl ">
-              <Link to="/ar#mm" className="all ">
+          <ul className="aful">
+            <li className="axl">
+              <Link to="/#mm" className="all">
                 <p>الصفحة الرئيسية</p>
               </Link>
             </li>
-            <li className="axl ">
-              <Link to="/arServices#mm" className="all ">
+            <li className="axl">
+              <Link to="/Services#mm" className="all">
                 <p>الخدمات</p>
               </Link>
             </li>
-            <li className="axl ">
-              <Link to="/arAboutus#mm" className="all ">
+            <li className="axl">
+              <Link to="/Aboutus#mm" className="all">
                 <p>اعرف عنا</p>
               </Link>
             </li>
-            <li className="axl ">
-              <Link to="/arContactus#mm" className="all ">
+            <li className="axl">
+              <Link to="/Contactus#mm" className="all">
                 <p>تواصل معنا الاّن</p>
               </Link>
             </li>
           </ul>
         </div>
-        <div className="aportion ">
-          <div className="acontact ">
+        <div className="aportion">
+          <div className="acontact">
             <h1>معلومات التواصل</h1>
             <p>
               نحن نقدم خدمات واضحة لتأسيس وإدارة أعمالك في دولة الإمارات العربية
@@ -156,22 +151,22 @@ export default function Footera() {
             <p>
               <picture>
                 <source srcSet="location.webp" type="image/webp" />
-                <img src="location.png" alt="location" /> مركز الأعمال 1 ، طابق
-                الميزانين ، فندق الميدان ، ند الشبا ، دبي ، الإمارات العربية
-                المتحدة.
+                <img src="location.png" loading="lazy" alt="location" /> مركز
+                الأعمال 1 ، طابق الميزانين ، فندق الميدان ، ند الشبا ، دبي ،
+                الإمارات العربية المتحدة.
               </picture>
             </p>
             <p>
               <picture>
                 <source srcSet="phone.webp" type="image/webp" />
-                <img src="phone.png" alt="phone" />
+                <img src="phone.png" loading="lazy" alt="phone" />
                 <a href="tel:0547807870">0547807870</a>
               </picture>
             </p>
             <p>
               <picture>
                 <source srcSet="mail.webp" type="image/webp" />
-                <img src="mail.png" alt="mail" />
+                <img src="mail.png" loading="lazy" alt="mail" />
                 <a href="mailto:Info@damansolutions.com">
                   Info@damansolutions.com
                 </a>

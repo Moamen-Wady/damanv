@@ -1,42 +1,19 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import Clients from "./components/clients";
 import "./styles/home.css";
-import "./styles/contact.css";
-import Navbar from "./components/navbar";
-import Footer from "./components/footer";
-import Prefooter from "./components/prefooter";
-import Banner from "./components/banner";
-import Ul from "./components/ul";
-
-import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-export default function Home() {
-  function scrollToHash() {
-    const id = window.location.hash.substr(1);
-
-    if (id) {
-      const anchor = document.getElementById(id);
-
-      if (anchor) {
-        anchor.scrollIntoView();
-      }
-    }
-  }
+export default function Home({ scrollToHash }) {
 
   useEffect(() => scrollToHash(), []);
   return (
     <>
-      <Navbar />
-      <Ul />
-      <Banner />
-
-      <div className=" whyuscont ">
+      <div className=" whyuscont">
         <AnimationOnScroll animateOnce={true} animateIn="animate__backInDown">
           <h1> Hire Us For</h1>
         </AnimationOnScroll>
-        <div className=" whyus ">
-          <div className=" telt ">
+        <div className=" whyus">
+          <div className=" telt">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInLeft"
@@ -44,7 +21,11 @@ export default function Home() {
               <h1>Security Clearances</h1>
               <picture>
                 <source srcSet="security1.webp" type="image/webp" />
-                <img src="security1.png" alt="Security clearances" />
+                <img
+                  src="security1.png"
+                  loading="lazy"
+                  alt="Security clearances"
+                />
               </picture>
               <p>
                 With our qualified team, we help you in all transactions to
@@ -53,7 +34,7 @@ export default function Home() {
             </AnimationOnScroll>
           </div>
 
-          <div className=" telt ">
+          <div className=" telt">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInLeft"
@@ -62,7 +43,11 @@ export default function Home() {
               <h1>Establishing A Facility</h1>
               <picture>
                 <source srcSet="facility.webp" type="image/webp" />
-                <img src="facility.jpg" alt="Facility establishing" />
+                <img
+                  src="facility.jpg"
+                  loading="lazy"
+                  alt="Facility establishing"
+                />
               </picture>
               <p>
                 Within this step, the required documents shall be signed in
@@ -71,7 +56,7 @@ export default function Home() {
             </AnimationOnScroll>
           </div>
 
-          <div className=" telt ">
+          <div className=" telt">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInLeft"
@@ -80,7 +65,11 @@ export default function Home() {
               <h1>Residence</h1>
               <picture>
                 <source srcSet="residence1.webp" type="image/webp" />
-                <img src="residence1.png" alt="residence visa extracting" />
+                <img
+                  src="residence1.png"
+                  loading="lazy"
+                  alt="residence visa extracting"
+                />
               </picture>
               <p>
                 With the help of our team, we speed up the process of extracting
@@ -90,7 +79,7 @@ export default function Home() {
           </div>
         </div>
       </div>
-      <div className=" vismis ">
+      <div className=" vismis">
         <div className="nos1">
           <h1>About Daman</h1>
           <p>Government & Business Setup Services in Dubai</p>
@@ -111,15 +100,14 @@ export default function Home() {
           </p>
         </div>
         <div className="nos2">
-          
           <picture>
             <source srcSet="5.webp" type="image/webp" />
-            <img src="5.jpg" alt="" />
+            <img src="5.jpg" loading="lazy" alt="" />
           </picture>
         </div>
       </div>
       <hr style={{ width: "80%", color: "white" }} />
-      <div className=" vismis ">
+      <div className=" vismis">
         <div className="nos1">
           <h1>Start with us</h1>
           <p>New Business Setup in Dubai</p>
@@ -144,19 +132,22 @@ export default function Home() {
           </p>
         </div>
         <div className="nos2">
-          
           <picture>
             <source srcSet="6.webp" type="image/webp" />
-            <img src="6.jpg" alt="" />
+            <img src="6.jpg" loading="lazy" alt="" />
           </picture>
         </div>
       </div>
       <hr style={{ width: "80%", color: "white" }} />
       <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
-        <div className=" idea ">
+        <div className=" idea">
           <picture>
             <source srcSet="idea.webp" type="image/webp" />
-            <img src="idea.jpg" alt="Motivational Business Quote" />
+            <img
+              src="idea.jpg"
+              loading="lazy"
+              alt="Motivational Business Quote"
+            />
           </picture>
           <p>
             <b>“</b>It Takes An Idea, Faith And Immense Amount Of Hard
@@ -166,11 +157,11 @@ export default function Home() {
       </AnimationOnScroll>
 
       <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
-        <div className=" vismis ">
-          <div className=" nos ">
+        <div className=" vismis">
+          <div className=" nos">
             <picture>
               <source srcSet="light.webp" type="image/webp" />
-              <img src="light.png" alt="" />
+              <img src="light.png" loading="lazy" alt="" />
             </picture>
             <h1>Our Vision</h1>
             <p>
@@ -186,10 +177,10 @@ export default function Home() {
               sectors.
             </p>
           </div>
-          <div className=" nos ">
+          <div className=" nos">
             <picture>
               <source srcSet="target.webp" type="image/webp" />
-              <img src="target.png" alt="" />
+              <img src="target.png" loading="lazy" alt="" />
             </picture>
             <h1>Our Mission</h1>
             <p>
@@ -209,13 +200,13 @@ export default function Home() {
       </AnimationOnScroll>
 
       <hr style={{ width: "80%", color: "white" }} />
-      <div className=" servcont ">
+      <div className=" servcont">
         <AnimationOnScroll animateOnce={true} animateIn="animate__backInDown">
           <h1> How Can We Help You?</h1>
         </AnimationOnScroll>
 
-        <div className=" serv ">
-          <div className=" telts ">
+        <div className=" serv">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -223,7 +214,7 @@ export default function Home() {
               <div>
                 <picture>
                   <source srcSet="5tama.webp" type="image/webp" />
-                  <img src="5tama.png" alt="" />
+                  <img src="5tama.png" loading="lazy" alt="" />
                 </picture>
                 <h1>DED Services</h1>
                 <p>
@@ -233,7 +224,7 @@ export default function Home() {
               </div>
             </AnimationOnScroll>
           </div>
-          <div className=" telts ">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -241,7 +232,7 @@ export default function Home() {
               <div>
                 <picture>
                   <source srcSet="visa.webp" type="image/webp" />
-                  <img src="visa.png" alt="" />
+                  <img src="visa.png" loading="lazy" alt="" />
                 </picture>
                 <h1>Visa Services In UAE</h1>
                 <p>
@@ -251,7 +242,7 @@ export default function Home() {
               </div>
             </AnimationOnScroll>
           </div>
-          <div className=" telts ">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -260,7 +251,7 @@ export default function Home() {
               <div>
                 <picture>
                   <source srcSet="hi.webp" type="image/webp" />
-                  <img src="hi.png" alt="" />
+                  <img src="hi.png" loading="lazy" alt="" />
                 </picture>
                 <h1>UAE Health Insurance</h1>
                 <p>
@@ -271,7 +262,7 @@ export default function Home() {
             </AnimationOnScroll>
           </div>
 
-          <div className=" telts ">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -280,7 +271,7 @@ export default function Home() {
               <div>
                 <picture>
                   <source srcSet="tasheel.webp" type="image/webp" />
-                  <img src="tasheel.png" alt="" />
+                  <img src="tasheel.png" loading="lazy" alt="" />
                 </picture>
                 <h1>Tasheel Services</h1>
                 <p>
@@ -291,7 +282,7 @@ export default function Home() {
             </AnimationOnScroll>
           </div>
 
-          <div className=" telts ">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -300,7 +291,7 @@ export default function Home() {
               <div>
                 <picture>
                   <source srcSet="bs.webp" type="image/webp" />
-                  <img src="bs.png" alt="" />
+                  <img src="bs.png" loading="lazy" alt="" />
                 </picture>
                 <h1>Business Setup</h1>
                 <p>
@@ -310,7 +301,7 @@ export default function Home() {
               </div>
             </AnimationOnScroll>
           </div>
-          <div className=" telts ">
+          <div className=" telts">
             <AnimationOnScroll
               animateOnce={true}
               animateIn="animate__slideInRight"
@@ -319,7 +310,7 @@ export default function Home() {
               <div>
                 <picture>
                   <source srcSet="id.webp" type="image/webp" />
-                  <img src="id.png" alt="" />
+                  <img src="id.png" loading="lazy" alt="" />
                 </picture>
                 <h1>UAE ID Services</h1>
                 <p>
@@ -333,7 +324,7 @@ export default function Home() {
       </div>
       <hr style={{ width: "80%" }} />
       <AnimationOnScroll animateOnce={true} animateIn="animate__backInLeft">
-        <div className=" advcont ">
+        <div className=" advcont">
           <h1>Why Choose Us Exactly?</h1>
           <p>
             Dubai has a lot of business opportunities. There are multitudes of
@@ -353,12 +344,12 @@ export default function Home() {
             owners just relax and focus on your core business operations while
             we work on company setup.
           </p>
-          <div className=" adv ">
-            <div className=" advgrid ">
+          <div className=" adv">
+            <div className=" advgrid">
               <div>
                 <picture>
                   <source srcSet="star.webp" type="image/webp" />
-                  <img src="star.png" alt="" />
+                  <img src="star.png" loading="lazy" alt="" />
                 </picture>
                 <p>
                   Expertise
@@ -369,10 +360,9 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                
                 <picture>
                   <source srcSet="dollar.webp" type="image/webp" />
-                  <img src="dollar.png" alt="" />
+                  <img src="dollar.png" loading="lazy" alt="" />
                 </picture>
                 <p>
                   Price
@@ -384,7 +374,7 @@ export default function Home() {
               <div>
                 <picture>
                   <source srcSet="ear.webp" type="image/webp" />
-                  <img src="ear.png" alt="" />
+                  <img src="ear.png" loading="lazy" alt="" />
                 </picture>
                 <p>
                   Communication <br />
@@ -395,7 +385,7 @@ export default function Home() {
               <div>
                 <picture>
                   <source srcSet="hand.webp" type="image/webp" />
-                  <img src="hand.png" alt="" />
+                  <img src="hand.png" loading="lazy" alt="" />
                 </picture>
                 <p>
                   Co-operation
@@ -410,11 +400,9 @@ export default function Home() {
         </div>
       </AnimationOnScroll>
 
-      <AnimationOnScroll animateOnce={true} animateIn="animate__jackInTheBox">
+      <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
         <Clients />
       </AnimationOnScroll>
-      <Prefooter />
-      <Footer />
     </>
   );
 }

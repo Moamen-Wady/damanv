@@ -1,35 +1,26 @@
-import React from "react";
-import { Link } from "react-router-dom";
 import "./navbara.css";
 
-export default function Navbara() {
-  var p = window.location.pathname;
-  var s = p + " ";
-  var x = p.slice(0, 1);
-  var en = s.slice(3, -1);
-  var xx = s.slice(1, -1);
-
+export default function Navbara({ setLang }) {
   return (
-    <div className="anvbr " id="mm">
-      <div className="atopbar ">
+    <div className="anvbr" id="mm">
+      <div className="atopbar">
         <div>
           <p>تطمح إلى شركة ناشئة عظيمة ..؟ مرحبًا بك في المكان المناسب</p>
-          <div className="algs ">
+          <div className="algs">
             <div className="alang">
               <span>
-                
                 <picture>
                   <source srcSet="uae.webp" type="image/webp" />
                   <img src="uae.png" alt="" />
                 </picture>
               </span>
               <div className="alangc">
-                <Link to={"/" + en} className="alanlink">
+                <button onClick={() => setLang("en")} className="alanlink">
                   English
-                </Link>
-                <Link to={p} className="alanlink">
+                </button>
+                <button onClick={() => setLang("ar")} className="alanlink">
                   العربية
-                </Link>
+                </button>
               </div>
             </div>
             <a
@@ -37,7 +28,6 @@ export default function Navbara() {
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="fb.webp" type="image/webp" />
                 <img src="fb.png" alt="" />
@@ -48,7 +38,6 @@ export default function Navbara() {
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="ig.webp" type="image/webp" />
                 <img src="ig.png" alt="" />
@@ -59,7 +48,6 @@ export default function Navbara() {
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="li.webp" type="image/webp" />
                 <img src="li.png" alt="" />
@@ -70,7 +58,6 @@ export default function Navbara() {
               target="_blank"
               rel="noreferrer"
             >
-              
               <picture>
                 <source srcSet="tw.webp" type="image/webp" />
                 <img src="tw.png" alt="" />

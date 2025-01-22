@@ -1,31 +1,11 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./styles/contact.css";
-import Navbara from "./components/navbara";
-import Footera from "./components/footera";
-import Prefootera from "./components/prefootera";
-import Bannera from "./components/bannera";
-import Ula from "./components/ula";
-export default function Contactus() {
-  function scrollToHash() {
-    const id = window.location.hash.substr(1);
-
-    if (id) {
-      const anchor = document.getElementById(id);
-
-      if (anchor) {
-        anchor.scrollIntoView();
-      }
-    }
-  }
+export default function Contactus({ scrollToHash }) {
 
   useEffect(() => scrollToHash(), []);
 
   return (
     <>
-      <Navbara />
-      <Ula />
-      <Bannera />
-
       <div id="container">
         <div className="form">
           <picture>
@@ -79,8 +59,6 @@ export default function Contactus() {
           </form>
         </div>
       </div>
-      <Prefootera />
-      <Footera />
     </>
   );
 }

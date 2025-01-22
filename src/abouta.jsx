@@ -1,35 +1,13 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import "./styles/abouta.css";
 import Clientsa from "./components/clientsa";
-import Navbara from "./components/navbara";
-import Footera from "./components/footera";
-import Prefootera from "./components/prefootera";
-import Bannera from "./components/bannera";
-import Ula from "./components/ula";
-
-import "animate.css/animate.min.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
-export default function Aboutusa() {
-  function scrollToHash() {
-    const id = window.location.hash.substr(1);
-
-    if (id) {
-      const anchor = document.getElementById(id);
-
-      if (anchor) {
-        anchor.scrollIntoView();
-      }
-    }
-  }
+export default function Aboutusa({ scrollToHash }) {
 
   useEffect(() => scrollToHash(), []);
   return (
     <>
-      <Navbara />
-      <Ula />
-      <Bannera />
-
       <div className="aaboutcont">
         <div className="afirst ax8">
           <AnimationOnScroll
@@ -128,12 +106,10 @@ export default function Aboutusa() {
             </div>
           </AnimationOnScroll>
         </div>
-        <AnimationOnScroll animateOnce={true} animateIn="animate__jackInTheBox">
+        <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
           <Clientsa />
         </AnimationOnScroll>
       </div>
-      <Prefootera />
-      <Footera />
     </>
   );
 }
