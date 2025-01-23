@@ -7,9 +7,10 @@
     font-size: var(
       --r2
     ); /* This is the a difference btw about en and about ar */
-    display: block;
+    display: inline-block;
     margin-top: var(--r1);
     margin-bottom: var(--r1);
+    text-align: center; /* This is the a difference btw about en and about ar */
   }
   body .asubthrd {
     margin-top: 0;
@@ -139,7 +140,7 @@
 .asubthrd {
   width: 100%;
   margin: auto;
-  text-align: right;
+  text-align: center; /* This is the a difference btw about en and about ar */
   margin-top: var(--r1);
   margin-bottom: var(--r2);
 }
@@ -150,7 +151,7 @@
 }
 .asubthrd p {
   text-align: right;
-  font-size: var(--r105);
+  font-size: var(--r2);
   font-family: "Noto Sans", serif;
   font-weight: bold;
   color: #ffbf0f;
