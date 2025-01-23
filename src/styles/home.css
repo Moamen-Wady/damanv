@@ -1,18 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Dosis&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Poiret+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Catamaran:wght@300&family=Poiret+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Patua+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&display=swap");
-
 @media only screen and (max-width: 850px) {
   body .telt h1 {
-    font-size: calc(var(--rem1) * 1.8);
+    font-size: calc(var(--r1) * 1.8);
   }
 }
 @media only screen and (max-width: 807px) {
@@ -23,7 +11,7 @@
   body .advgrid p {
     width: 95%;
     text-align: center;
-    font-size: calc(var(--rem1) * 1.2);
+    font-size: calc(var(--r1) * 1.2);
   }
   body .advgrid {
     text-align: center;
@@ -34,7 +22,7 @@
 }
 @media only screen and (max-width: 775px) {
   body .telt h1 {
-    font-size: calc(var(--rem1) * 1.5);
+    font-size: calc(var(--r1) * 1.5);
   }
   body .idea {
     width: 80%;
@@ -42,7 +30,7 @@
 }
 @media only screen and (max-width: 675px) {
   body .telt h1 {
-    font-size: calc(var(--rem1) * 1.4);
+    font-size: calc(var(--r1) * 1.4);
   }
   body .telt img {
     width: 90%;
@@ -53,10 +41,10 @@
     width: 90%;
   }
   body .telt h1 {
-    font-size: calc(var(--rem1) * 3);
+    font-size: calc(var(--r1) * 3);
   }
   body .telt p {
-    font-size: calc(var(--rem1) * 1.5);
+    font-size: calc(var(--r1) * 1.5);
     text-align: center;
   }
   body .telt img {
@@ -73,11 +61,11 @@
   body .nos2 {
     margin: auto;
     width: 90%;
-    padding: var(--rem1);
+    padding: var(--r1);
   }
   body .nos img {
     float: left;
-    margin: var(--rem1);
+    margin: var(--r1);
   }
   body .nos2 img {
     transform: none;
@@ -90,17 +78,17 @@
   width: 100%;
   text-align: center;
   margin: auto;
-  padding-top: var(--rem1);
-  margin-bottom: var(--rem2);
+  padding-top: var(--r1);
+  margin-bottom: var(--r2);
   overflow: hidden;
 }
 .whyuscont h1 {
-  font-size: var(--rem3);
+  font-size: var(--r3);
   color: white;
   display: block;
   margin: auto;
-  margin-top: var(--rem1);
-  margin-bottom: var(--rem2);
+  margin-top: var(--r1);
+  margin-bottom: var(--r2);
   font-family: "El Messiri", sans-serif;
 }
 .whyus {
@@ -110,7 +98,7 @@
 }
 .telt {
   width: 32%;
-  padding: var(--rem05);
+  padding: var(--r05);
   display: inline-block;
 }
 .telt img {
@@ -123,16 +111,16 @@
 .telt h1 {
   font-family: "El Messiri", sans-serif;
   font-weight: 500;
-  font-size: var(--rem2);
+  font-size: var(--r2);
   color: #ffbf0f;
-  margin: var(--rem05);
+  margin: var(--r05);
 }
 .telt p {
   font-family: "El Messiri", sans-serif;
-  font-size: calc(var(--rem1) * 1.2);
+  font-size: calc(var(--r1) * 1.2);
   text-transform: capitalize;
   text-align: left;
-  padding: var(--rem05);
+  padding: var(--r05);
   font-weight: 300;
   color: white;
 }
@@ -142,7 +130,7 @@
   align-items: flex-start;
   justify-content: space-evenly;
   text-align: center;
-  margin-bottom: var(--rem2);
+  margin-bottom: var(--r2);
   overflow: hidden;
 }
 .nos {
@@ -153,19 +141,19 @@
   height: 15%;
   display: block;
   margin: auto;
-  margin-bottom: var(--rem2);
+  margin-bottom: var(--r2);
 }
 .nos h1 {
   font-family: "El Messiri", sans-serif;
-  font-size: var(--rem2);
+  font-size: var(--r2);
   color: #ffbf0f;
-  margin: var(--rem5);
+  margin: var(--r5);
   display: block;
   margin: auto;
 }
 .nos p {
   font-family: "El Messiri", sans-serif;
-  font-size: calc(var(--rem1));
+  font-size: calc(var(--r1));
   text-transform: capitalize;
   text-align: left;
   font-weight: 300;
@@ -179,7 +167,7 @@
 }
 .nos2 img {
   width: 100%;
-  height: calc(var(--rem5) * 5);
+  height: calc(var(--r5) * 5);
   transform: translateY(50%);
 }
 .nos1 img {
@@ -187,18 +175,18 @@
   height: 15%;
   display: block;
   margin: auto;
-  margin-bottom: var(--rem2);
+  margin-bottom: var(--r2);
 }
 .nos1 h1 {
   font-family: "El Messiri", sans-serif;
-  font-size: var(--rem3);
+  font-size: var(--r3);
   color: #ffbf0f;
   text-align: left;
   margin: 0;
 }
 .nos1 p {
   font-family: "El Messiri", sans-serif;
-  font-size: calc(var(--rem105));
+  font-size: calc(var(--r105));
   text-transform: capitalize;
   text-align: left;
   font-weight: 300;
@@ -207,8 +195,8 @@
 .idea {
   width: 60%;
   margin: auto;
-  margin-top: var(--rem1);
-  margin-bottom: var(--rem2);
+  margin-top: var(--r1);
+  margin-bottom: var(--r2);
   overflow: hidden;
 }
 .idea img {
@@ -220,7 +208,7 @@
   border: 1px dashed goldenrod;
 }
 .idea p {
-  font-size: var(--rem105);
+  font-size: var(--r105);
   font-family: "Poiret One", cursive;
   font-weight: 900;
   text-align: justify;
@@ -233,7 +221,7 @@
   display: inline;
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
-  font-size: var(--rem2);
+  font-size: var(--r2);
   color: #ffbf0f;
 }
 .advcont {
@@ -243,21 +231,21 @@
   text-align: center;
   font-family: "El Messiri", sans-serif;
   font-weight: 500;
-  font-size: var(--rem3);
+  font-size: var(--r3);
   color: white;
 }
 .adv {
   width: 80%;
   margin: auto;
-  margin-top: var(--rem1);
-  margin-bottom: var(--rem2);
+  margin-top: var(--r1);
+  margin-bottom: var(--r2);
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
   text-align: justify;
 }
 .advcont > p {
-  font-size: calc(var(--rem1) * 1.2);
+  font-size: calc(var(--r1) * 1.2);
   font-family: "El Messiri", sans-serif;
   font-weight: 300;
   width: 80%;
@@ -266,7 +254,7 @@
   color: white;
 }
 .adv > p {
-  font-size: calc(var(--rem1) * 1.2);
+  font-size: calc(var(--r1) * 1.2);
   font-family: "El Messiri", sans-serif;
   font-weight: 300;
   width: 55%;
@@ -280,13 +268,13 @@
   grid-template-rows: repeat(2, 1fr);
   width: 80%;
   gap: 5px;
-  font-size: var(--rem1);
+  font-size: var(--r1);
 }
 .advgrid img {
   width: 30%;
   display: inline;
   vertical-align: top;
-  margin: var(--rem1);
+  margin: var(--r1);
 }
 .advgrid div {
   margin: auto;

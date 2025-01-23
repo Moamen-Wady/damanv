@@ -2,26 +2,25 @@ import "./styles/styles.css";
 import "animate.css/animate.min.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useState, lazy } from "react";
-// const LazyComponent = lazy(() => import('./LazyComponent'));
-import Home from "./Home";
-import Services from "./Services";
-import Aboutus from "./about";
-import ContactUs from "./ContactUs";
-import Errorp from "./Errorp";
-import Homea from "./homea";
-import Servicesa from "./servicesa";
-import Aboutusa from "./abouta";
-import ContactUsa from "./ContactUsa";
-import Errorpa from "./Errorpa";
 import Navbar from "./components/navbar";
 import Ul from "./components/ul";
 import Banner from "./components/banner";
-import Prefooter from "./components/prefooter";
-import Footer from "./components/footer";
 import Navbara from "./components/navbara";
 import Ula from "./components/ula";
-import Prefootera from "./components/prefootera";
-import Footera from "./components/footera";
+const Prefooter = lazy(() => import("./components/prefooter"));
+const Footer = lazy(() => import("./components/footer"));
+const Prefootera = lazy(() => import("./components/prefootera"));
+const Footera = lazy(() => import("./components/footera"));
+const HomeP = lazy(() => import("./Home"));
+const ServicesP = lazy(() => import("./Services"));
+const AboutusP = lazy(() => import("./about"));
+const ContactUsP = lazy(() => import("./ContactUs"));
+const ErrorpP = lazy(() => import("./Errorp"));
+const HomeaP = lazy(() => import("./homea"));
+const ServicesaP = lazy(() => import("./servicesa"));
+const AboutusaP = lazy(() => import("./abouta"));
+const ContactUsaP = lazy(() => import("./ContactUsa"));
+const ErrorpaP = lazy(() => import("./Errorpa"));
 
 function App() {
   useEffect(() => {
@@ -43,21 +42,21 @@ function App() {
         <Ul />
         <Banner />
         <Routes>
-          <Route path="/" element={<Home scrollToHash={scrollToHash} />} />
-          <Route path="/index" element={<Home scrollToHash={scrollToHash} />} />
+          <Route path="/" element={<HomeP scrollToHash={scrollToHash} />} />
+          <Route path="/index" element={<HomeP scrollToHash={scrollToHash} />} />
           <Route
             path="/Contactus"
-            element={<ContactUs scrollToHash={scrollToHash} />}
+            element={<ContactUsP scrollToHash={scrollToHash} />}
           />
           <Route
             path="/Services"
-            element={<Services scrollToHash={scrollToHash} />}
+            element={<ServicesP scrollToHash={scrollToHash} />}
           />
           <Route
             path="/Aboutus"
-            element={<Aboutus scrollToHash={scrollToHash} />}
+            element={<AboutusP scrollToHash={scrollToHash} />}
           />
-          <Route path="*" element={<Errorp scrollToHash={scrollToHash} />} />
+          <Route path="*" element={<ErrorpP scrollToHash={scrollToHash} />} />
         </Routes>
         <Prefooter />
         <Footer />
@@ -70,24 +69,24 @@ function App() {
         <Ula />
         <Banner />
         <Routes>
-          <Route path="/" element={<Homea scrollToHash={scrollToHash} />} />
+          <Route path="/" element={<HomeaP scrollToHash={scrollToHash} />} />
           <Route
             path="/index"
-            element={<Homea scrollToHash={scrollToHash} />}
+            element={<HomeaP scrollToHash={scrollToHash} />}
           />
           <Route
             path="/Contactus"
-            element={<ContactUsa scrollToHash={scrollToHash} />}
+            element={<ContactUsaP scrollToHash={scrollToHash} />}
           />
           <Route
             path="/Services"
-            element={<Servicesa scrollToHash={scrollToHash} />}
+            element={<ServicesaP scrollToHash={scrollToHash} />}
           />
           <Route
             path="/Aboutus"
-            element={<Aboutusa scrollToHash={scrollToHash} />}
+            element={<AboutusaP scrollToHash={scrollToHash} />}
           />
-          <Route path="*" element={<Errorpa scrollToHash={scrollToHash} />} />
+          <Route path="*" element={<ErrorpaP scrollToHash={scrollToHash} />} />
         </Routes>
         <Prefootera />
         <Footera />

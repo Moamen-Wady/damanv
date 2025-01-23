@@ -1,45 +1,66 @@
+import Slider from "react-slick";
 import "./banner.css";
-import { useState, useCallback } from "react";
-
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 export default function Banner() {
-  const [z, setZ] = useState(0);
-  const x = [0, 1, 2];
-  let i;
-  function bannerAnim() {
-    for (i = 0; i < x.length; i++) {
-      document.getElementById(`${x[i]}`).style.opacity = 0;
+  const PrevArrow = (props) => {
+    const { className, onClick } = props;
+    return (
+      <div className="custom-prev-arrow" onClick={onClick}>
+        &#10094;
+      </div>
+    );
+  };
+  const NextArrow = (props) => {
+    const { className, onClick } = props;
+    return (
+      <div className="custom-next-arrow" onClick={onClick}>
+        &#10095;
+      </div>
+    );
+  };
+  const settings = {
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    fade: true,
+    cssEase: "linear",
+    nextArrow: <NextArrow />,
+    prevArrow: <PrevArrow />,
+    pauseOnHover: false,
+  };
+  const slides = [
+    {
+      img: "/1.webp",
+    },
+    {
+      img: "/2.webp",
+    },
+    {
+      img: "/3.webp",
     }
-    document.getElementById(`${x[z]}`).style.opacity = 1;
-    setZ((prev) => (prev += 1));
-    if (z > x.length - 1) {
-      setZ(0);
-    }
-  }
-  useCallback(() => {
-    setZ(0);
-  }, []);
-  useCallback(setTimeout(bannerAnim, 3000));
+  ];
 
   return (
-    <header className="head">
-      <div className="slz">
-        <picture>
-          <source srcSet="1.webp" type="image/webp" />
-          <img id={0} src="1.jpg" alt="" className="bg" />
-        </picture>
-      </div>
-      <div className="slz">
-        <picture>
-          <source srcSet="2.webp" type="image/webp" />
-          <img id={1} src="2.jpg" alt="" className="bg" />
-        </picture>
-      </div>
-      <div className="slz">
-        <picture>
-          <source srcSet="3.webp" type="image/webp" />
-          <img id={2} src="3.jpg" alt="" className="bg" />
-        </picture>
-      </div>
-    </header>
+    <div className="slideshow-container">
+      {/* <p className="onslider">
+        We are now the Authorized Distributor of Lectrobar in Egypt
+      </p>
+      <img src="/btw.png" className="shade" /> */}
+      <Slider {...settings}>
+        {slides.map((slide, index) => (
+          <div key={`SlideImg ${index + 1}`}>
+            <img
+              className="slide-image"
+              src={slide.img}
+              alt={`Slide ${index + 1}`}
+            />
+          </div>
+        ))}
+      </Slider>
+    </div>
   );
 }
