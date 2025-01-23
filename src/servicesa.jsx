@@ -1,8 +1,7 @@
 import "./styles/servicesa.css";
-import { useEffect } from "react";
+import { useEffect, lazy } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-import Clientsa from "./components/clientsa";
-
+const Clientsa = lazy(() => import("./components/clientsa"));
 export default function Servicesa({ scrollToHash }) {
   useEffect(() => scrollToHash(), []);
   return (
