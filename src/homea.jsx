@@ -1,7 +1,8 @@
-import { useEffect, lazy } from "react";
+import { useEffect } from "react";
 import "./styles/homea.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-const Clientsa = lazy(() => import("./components/clientsa"));
+import Clientsa from "./components/clientsa";
+
 export default function Homea({ scrollToHash }) {
   useEffect(() => scrollToHash(), []);
   return (

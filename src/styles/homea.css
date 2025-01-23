@@ -1,50 +1,18 @@
-@media only screen and (max-width: 850px) {
-  body .atelt h1 {
-    font-size: calc(var(--r1) * 1.8);
-  }
-}
-@media only screen and (max-width: 807px) {
-  body .aadv {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  body .aadvgrid p {
-    width: 95%;
-    text-align: center;
-    font-size: calc(var(--r1) * 1.2);
-  }
-  body .aadvgrid {
-    text-align: center;
-  }
-  body .atelt img {
-    width: 85%;
-  }
-}
-@media only screen and (max-width: 775px) {
-  body .atelt h1 {
-    font-size: calc(var(--r1) * 1.5);
-  }
+@media only screen and (max-width: 768px) {
   body .aidea {
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 675px) {
-  body .atelt h1 {
-    font-size: calc(var(--r1) * 1.4);
-  }
-  body .atelt img {
     width: 90%;
   }
-}
-@media only screen and (max-width: 768px) {
+  body .aidea p {
+    font-size: calc(var(--r2));
+  }
   body .atelt {
     width: 90%;
   }
   body .atelt h1 {
-    font-size: calc(var(--r1) * 3);
+    font-size: var(--r3);
   }
   body .atelt p {
-    font-size: calc(var(--r1) * 1.5);
+    font-size: var(--r105);
     text-align: center;
   }
   body .atelt img {
@@ -73,6 +41,46 @@
     margin: auto;
     text-align: center;
   }
+  body .aadvcont p {
+    width: 90%;
+    margin: auto;
+    font-size: var(--r105);
+  }
+  body .aadvgrid {
+    width: 95%;
+  }
+  body .aadv {
+    width: 90%;
+  }
+  body .anos p {
+    font-size: calc(var(--r1) * 1.5);
+  }
+  body .anos1 p {
+    font-size: calc(var(--r1) * 1.5);
+  }
+}
+@media only screen and (max-width: 590px) {
+  body .anos p {
+    font-size: calc(var(--r2));
+  }
+  body .anos1 p {
+    font-size: calc(var(--r2));
+  }
+  body .atelt h1 {
+    font-size: calc(var(--r2) * 1.25);
+  }
+  body .atelt p {
+    font-size: var(--r2);
+    text-align: center;
+  }
+  body .aadvcont p {
+    width: 90%;
+    margin: auto;
+    font-size: var(--r2);
+  }
+  body .atelt img {
+    width: 90%;
+  }
 }
 .a {
   direction: rtl;
@@ -87,13 +95,12 @@
 }
 .awhyuscont h1 {
   font-size: var(--r3);
-  color: var(--black2);
+  color: white;
   display: block;
   margin: auto;
   margin-top: var(--r1);
   margin-bottom: var(--r2);
   font-family: "El Messiri", sans-serif;
-  color: white;
 }
 .awhyus {
   display: flex;
@@ -114,12 +121,13 @@
 }
 .atelt h1 {
   font-family: "El Messiri", sans-serif;
+  font-weight: 500;
   font-size: var(--r2);
   color: #ffbf0f;
   margin: var(--r05);
 }
 .atelt p {
-  font-family: "El Messiri", sans-serif;
+  font-family: "Noto Sans", serif;
   font-size: calc(var(--r1) * 1.2);
   text-transform: capitalize;
   text-align: right;
@@ -133,6 +141,7 @@
   align-items: flex-start;
   justify-content: space-evenly;
   text-align: center;
+  margin-bottom: var(--r2);
   overflow: hidden;
 }
 .anos {
@@ -147,17 +156,17 @@
 }
 .anos h1 {
   font-family: "El Messiri", sans-serif;
-  font-size: var(--r2);
+  font-size: var(--r3);
   color: #ffbf0f;
   margin: var(--r5);
   display: block;
   margin: auto;
 }
 .anos p {
-  font-family: "El Messiri", sans-serif;
-  font-size: calc(var(--r1));
+  font-size: calc(var(--r1) * 1.2);
+  font-family: "Noto Sans", serif;
   text-transform: capitalize;
-  text-align: justify;
+  text-align: right;
   font-weight: 300;
   color: white;
 }
@@ -170,7 +179,7 @@
 .anos2 img {
   width: 100%;
   height: calc(var(--r5) * 5);
-  transform: translateY(50%);
+  /* transform: translateY(50%); */
 }
 .anos1 img {
   width: 15%;
@@ -187,15 +196,15 @@
   margin: 0;
 }
 .anos1 p {
-  font-family: "El Messiri", sans-serif;
-  font-size: calc(var(--r105));
+  font-family: "Noto Sans", serif;
+  font-size: calc(var(--r1) * 1.2);
   text-transform: capitalize;
   text-align: right;
   font-weight: 300;
   color: white;
 }
 .aidea {
-  width: 60%;
+  width: 70%;
   margin: auto;
   margin-top: var(--r1);
   margin-bottom: var(--r2);
@@ -210,8 +219,8 @@
   border: 1px dashed goldenrod;
 }
 .aidea p {
-  font-size: var(--r105);
-  font-family: "Marhey", cursive;
+  font-size: calc(var(--r1) * 1.2);
+  font-family: "Poiret One", cursive;
   font-weight: 900;
   text-align: justify;
   max-width: 90%;
@@ -232,8 +241,8 @@
 .aadvcont h1 {
   text-align: center;
   font-family: "El Messiri", sans-serif;
+  font-weight: 500;
   font-size: var(--r3);
-  color: var(--black2);
   color: white;
 }
 .aadv {
@@ -248,7 +257,7 @@
 }
 .aadvcont > p {
   font-size: calc(var(--r1) * 1.2);
-  font-family: "El Messiri", sans-serif;
+  font-family: "Noto Sans", serif;
   font-weight: 300;
   width: 80%;
   margin: auto;
@@ -257,7 +266,7 @@
 }
 .aadv > p {
   font-size: calc(var(--r1) * 1.2);
-  font-family: "El Messiri", sans-serif;
+  font-family: "Noto Sans", serif;
   font-weight: 300;
   width: 55%;
   margin-left: 5%;
@@ -270,7 +279,7 @@
   grid-template-rows: repeat(2, 1fr);
   width: 80%;
   gap: 5px;
-  font-size: var(--r1);
+  font-size: calc(var(--r1) * 1.2);
 }
 .aadvgrid img {
   width: 30%;
@@ -285,9 +294,9 @@
 .aadvgrid p {
   display: inline-block;
   width: 60%;
-  font-family: "El Messiri", sans-serif;
+  font-family: "Noto Sans", serif;
   font-weight: 300;
   text-align: right;
-  color: var(--black2);
+  font-size: calc(var(--r1) * 1.2);
   color: white;
 }

@@ -1,50 +1,18 @@
-@media only screen and (max-width: 850px) {
-  body .telt h1 {
-    font-size: calc(var(--r1) * 1.8);
-  }
-}
-@media only screen and (max-width: 807px) {
-  body .adv {
-    width: 100%;
-    box-sizing: border-box;
-  }
-  body .advgrid p {
-    width: 95%;
-    text-align: center;
-    font-size: calc(var(--r1) * 1.2);
-  }
-  body .advgrid {
-    text-align: center;
-  }
-  body .telt img {
-    width: 85%;
-  }
-}
-@media only screen and (max-width: 775px) {
-  body .telt h1 {
-    font-size: calc(var(--r1) * 1.5);
-  }
+@media only screen and (max-width: 768px) {
   body .idea {
-    width: 80%;
-  }
-}
-@media only screen and (max-width: 675px) {
-  body .telt h1 {
-    font-size: calc(var(--r1) * 1.4);
-  }
-  body .telt img {
     width: 90%;
   }
-}
-@media only screen and (max-width: 768px) {
+  body .idea p {
+    font-size: calc(var(--r2));
+  }
   body .telt {
     width: 90%;
   }
   body .telt h1 {
-    font-size: calc(var(--r1) * 3);
+    font-size: var(--r3);
   }
   body .telt p {
-    font-size: calc(var(--r1) * 1.5);
+    font-size: var(--r105);
     text-align: center;
   }
   body .telt img {
@@ -72,6 +40,46 @@
     display: block;
     margin: auto;
     text-align: center;
+  }
+  body .advcont p {
+    width: 90%;
+    margin: auto;
+    font-size: var(--r105);
+  }
+  body .advgrid {
+    width: 95%;
+  }
+  body .adv {
+    width: 90%;
+  }
+  body .nos p {
+    font-size: calc(var(--r1) * 1.5);
+  }
+  body .nos1 p {
+    font-size: calc(var(--r1) * 1.5);
+  }
+}
+@media only screen and (max-width: 590px) {
+  body .nos p {
+    font-size: calc(var(--r2));
+  }
+  body .nos1 p {
+    font-size: calc(var(--r2));
+  }
+  body .telt h1 {
+    font-size: calc(var(--r2) * 1.25);
+  }
+  body .telt p {
+    font-size: var(--r2);
+    text-align: center;
+  }
+  body .advcont p {
+    width: 90%;
+    margin: auto;
+    font-size: var(--r2);
+  }
+  body .telt img {
+    width: 90%;
   }
 }
 .whyuscont {
@@ -116,7 +124,7 @@
   margin: var(--r05);
 }
 .telt p {
-  font-family: "El Messiri", sans-serif;
+  font-family: "Noto Sans", serif;
   font-size: calc(var(--r1) * 1.2);
   text-transform: capitalize;
   text-align: left;
@@ -145,15 +153,15 @@
 }
 .nos h1 {
   font-family: "El Messiri", sans-serif;
-  font-size: var(--r2);
+  font-size: var(--r3);
   color: #ffbf0f;
   margin: var(--r5);
   display: block;
   margin: auto;
 }
 .nos p {
-  font-family: "El Messiri", sans-serif;
-  font-size: calc(var(--r1));
+  font-size: calc(var(--r1) * 1.2);
+  font-family: "Noto Sans", serif;
   text-transform: capitalize;
   text-align: left;
   font-weight: 300;
@@ -168,7 +176,7 @@
 .nos2 img {
   width: 100%;
   height: calc(var(--r5) * 5);
-  transform: translateY(50%);
+  /* transform: translateY(50%); */
 }
 .nos1 img {
   width: 15%;
@@ -185,15 +193,15 @@
   margin: 0;
 }
 .nos1 p {
-  font-family: "El Messiri", sans-serif;
-  font-size: calc(var(--r105));
+  font-family: "Noto Sans", serif;
+  font-size: calc(var(--r1) * 1.2);
   text-transform: capitalize;
   text-align: left;
   font-weight: 300;
   color: white;
 }
 .idea {
-  width: 60%;
+  width: 70%;
   margin: auto;
   margin-top: var(--r1);
   margin-bottom: var(--r2);
@@ -208,7 +216,7 @@
   border: 1px dashed goldenrod;
 }
 .idea p {
-  font-size: var(--r105);
+  font-size: calc(var(--r1) * 1.2);
   font-family: "Poiret One", cursive;
   font-weight: 900;
   text-align: justify;
@@ -246,7 +254,7 @@
 }
 .advcont > p {
   font-size: calc(var(--r1) * 1.2);
-  font-family: "El Messiri", sans-serif;
+  font-family: "Noto Sans", serif;
   font-weight: 300;
   width: 80%;
   margin: auto;
@@ -255,7 +263,7 @@
 }
 .adv > p {
   font-size: calc(var(--r1) * 1.2);
-  font-family: "El Messiri", sans-serif;
+  font-family: "Noto Sans", serif;
   font-weight: 300;
   width: 55%;
   margin-left: 5%;
@@ -268,7 +276,7 @@
   grid-template-rows: repeat(2, 1fr);
   width: 80%;
   gap: 5px;
-  font-size: var(--r1);
+  font-size: calc(var(--r1) * 1.2);
 }
 .advgrid img {
   width: 30%;
@@ -283,8 +291,9 @@
 .advgrid p {
   display: inline-block;
   width: 60%;
-  font-family: "El Messiri", sans-serif;
+  font-family: "Noto Sans", serif;
   font-weight: 300;
   text-align: left;
+  font-size: calc(var(--r1) * 1.2);
   color: white;
 }

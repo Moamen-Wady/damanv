@@ -5,7 +5,7 @@ export default function Clientsa() {
       <div className="aclientscont">
         <h1>بعض من شركائنا </h1>
 
-        <div className=" clients">
+        <div className="clients">
           <div className="ccard">
             <picture>
               <source srcSet="c1.webp" type="image/webp" />

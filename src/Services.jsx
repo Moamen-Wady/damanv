@@ -1,7 +1,7 @@
 import "./styles/services.css";
-import { useEffect, lazy } from "react";
+import { useEffect } from "react";
+import Clients from "./components/clients";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-const Clients = lazy(() => import("./components/clients"));
 
 export default function Services({ scrollToHash }) {
   useEffect(() => scrollToHash(), []);

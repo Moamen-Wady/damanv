@@ -46,7 +46,7 @@ export default function Footera() {
                   type="number"
                   id="residence"
                   name="residence"
-                  placeholder="Number of Residences or Investors / عدد الاقامات او المستثمرين"
+                  placeholder="No. of Residences or Investors / عدد الاقامات او المستثمرين"
                 />
 
                 <textarea

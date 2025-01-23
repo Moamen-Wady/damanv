@@ -1,9 +1,10 @@
-import { useEffect, lazy } from "react";
+import { useEffect } from "react";
 import "./styles/abouta.css";
+import Clientsa from "./components/clientsa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
-const Clientsa = lazy(() => import("./components/clientsa"));
 
 export default function Aboutusa({ scrollToHash }) {
+
   useEffect(() => scrollToHash(), []);
   return (
     <>

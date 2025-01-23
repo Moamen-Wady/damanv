@@ -10,7 +10,6 @@ import Errorp from "./Errorp";
 import Homea from "./homea";
 import Servicesa from "./servicesa";
 import Aboutusa from "./abouta";
-import ContactUsa from "./ContactUsa";
 import Errorpa from "./Errorpa";
 import Navbar from "./components/navbar";
 import Ul from "./components/ul";
@@ -76,7 +75,7 @@ function App() {
           />
           <Route
             path="/Contactus"
-            element={<ContactUsa scrollToHash={scrollToHash} />}
+            element={<ContactUs scrollToHash={scrollToHash} />}
           />
           <Route
             path="/Services"

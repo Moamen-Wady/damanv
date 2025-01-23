@@ -1,19 +1,35 @@
-@media only screen and (max-width: 500px) {
-  body .form input {
-    font-size: calc(var(--r1));
+@media only screen and (max-width: 768px) {
+  body .form {
+    width: 92%;
+  }
+  body .form p {
+    font-size: var(--r105);
+  }
+}
+@media only screen and (max-width: 590px) {
+  body .form input:not([type="submit"]) {
+    width: 90%;
+    font-size: var(--r105);
   }
   body .form textarea {
-    font-size: calc(var(--r1));
+    font-size: var(--r105);
+    width: 90%;
+  }
+  body .form input[type="submit"] {
+    font-size: var(--r105);
   }
 }
 @media only screen and (max-width: 410px) {
-  body .form input {
-    font-size: calc(var(--r1) * 0.8);
+  body .form input:not([type="submit"]) {
+    font-size: var(--r2);
+    margin-top: 2%;
   }
   body .form textarea {
-    font-size: calc(var(--r1) * 0.8);
+    font-size: var(--r2);
+    height: calc(var(--r5) * 2);
   }
 }
+/* 
 @media only screen and (max-width: 328px) {
   body .form input {
     font-size: calc(var(--r1) * 0.7);
@@ -21,7 +37,7 @@
   body .form textarea {
     font-size: calc(var(--r1) * 0.7);
   }
-}
+} */
 #container {
   display: block;
   width: 100%;
@@ -31,44 +47,33 @@
   background-color: #c99f4b;
   text-align: center;
   overflow: hidden;
-  border-radius: 5%;
+  border-radius: var(--r1);
   border: 3px solid black;
   margin: auto;
   margin-top: var(--r3);
   margin-bottom: var(--r2);
   padding: var(--r2);
   padding-left: 0;
-}
-.form1 {
-  width: calc(var(--r5) * 12);
-  background-color: var(--black2);
-  text-align: center;
-  overflow: hidden;
-  border-radius: 5%;
-  border: 3px solid black;
-  margin: auto;
-  margin-top: var(--r2);
-  margin-bottom: var(--r2);
-  padding: calc(var(--r05) * 0.1);
+  font-family: "Noto Sans", sans-serif;
 }
 .form p {
-  display: block;
+  font-size: calc(var(--r1) * 1.2);
   max-width: 80%;
+  display: block;
   margin: auto;
   text-align: center;
   color: white;
-  font-size: calc(var(--r1) * 1.2);
   font-weight: bold;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-family: "Noto Sans", sans-serif;
 }
 .form img {
   width: calc(var(--r5) * 1.5);
   height: calc(var(--r5) * 1.5);
   text-align: left;
 }
-.form input {
-  display: block;
+.form input:not([type="submit"]) {
   width: 80%;
+  display: block;
   margin: auto;
   margin-top: 1%;
   background-color: rgb(240, 234, 186);
@@ -78,7 +83,21 @@
   border: 1px solid grey;
   padding: 1%;
 }
+.form input[type="submit"] {
+  all: unset;
+  border: 1px solid black;
+  border-radius: 3px;
+  margin: auto;
+  margin-top: 1%;
+  display: block;
+  padding: var(--r05);
+  width: max-content;
+  background-color: rgb(240, 234, 186);
+  color: black;
+  font-size: calc(var(--r1) * 1.2);
+}
 .form textarea {
+  height: var(--r5);
   display: block;
   padding: 1%;
   width: 80%;
@@ -86,47 +105,5 @@
   margin-top: 3%;
   background-color: rgb(240, 234, 186);
   color: black;
-  height: var(--r5);
   font-size: calc(var(--r1) * 1.25);
-}
-.form span {
-  display: block;
-  margin: auto;
-  background-color: white;
-  border: 1.5px solid black;
-  border-radius: 5%;
-  height: var(--r2);
-  width: 100%;
-  cursor: pointer;
-  transition-property: width;
-  transition-timing-function: ease-in-out;
-  padding: var(--r05);
-}
-.form span > p {
-  color: var(--black2);
-  font-family: monospace;
-  font-size: calc(var(--r1) * 1);
-  display: inline;
-  margin: auto;
-  width: 100%;
-  vertical-align: super;
-}
-.form span:hover {
-  background-color: rgb(255, 251, 0);
-  color: white;
-  transform: scale(1.1);
-}
-.form button {
-  appearance: none;
-  padding: 1%;
-  background-color: transparent;
-  border: 0;
-  margin: var(--r1);
-}
-.form input:nth-last-child(1) {
-  display: inline-block;
-  cursor: pointer;
-  width: 15%;
-  height: max-content;
-  padding: 1%;
 }

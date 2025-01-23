@@ -1,7 +1,12 @@
-@media only screen and (max-width: 820px) {
+@media only screen and (max-width: 768px) {
+  body .aaboutcont,
+  body .ax8 {
+    width: 95%;
+  }
   body .asubthrd p {
-    font-size: calc(var(--r1) * 1.5);
-    text-align: center;
+    font-size: var(
+      --r2
+    ); /* This is the a difference btw about en and about ar */
     display: block;
     margin-top: var(--r1);
     margin-bottom: var(--r1);
@@ -11,54 +16,31 @@
     margin-bottom: 0;
     text-align: center;
   }
-  body .asubthrd div {
-    display: block;
-    margin: auto;
-  }
-}
-@media only screen and (max-width: 650px) {
-  body .asubthrd p {
-    font-size: calc(var(--r1) * 1.5);
-    text-align: center;
-    display: block;
-    margin-top: var(--r1);
-    margin-bottom: var(--r1);
-  }
-  body .asubthrd {
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
-  }
-  body .asubthrd div {
-    display: block;
-    margin: auto;
+  body .afirst p {
+    font-size: var(--r105);
   }
   body .asnd ul {
-    font-size: var(--r1);
+    font-size: var(
+      --r2
+    ); /* This is the a difference btw about en and about ar */
+  }
+}
+@media only screen and (max-width: 590px) {
+  body .asubthrd p {
+    font-size: var(--r2);
+  }
+  body .afirst p {
+    font-size: var(--r2);
+  }
+  body .asnd ul {
+    font-size: var(--r2);
   }
 }
 @media only screen and (max-width: 455px) {
-  body .asubthrd p {
-    font-size: calc(var(--r1) * 1.5);
-    text-align: center;
-    display: block;
-    margin-top: var(--r1);
-    margin-bottom: var(--r1);
-  }
-  body .asubthrd {
-    margin-top: 0;
-    margin-bottom: 0;
-    text-align: center;
-  }
-  body .asubthrd div {
-    display: block;
-    margin: auto;
-  }
   body .asnd ul {
-    font-size: var(--r1);
     display: block;
-    max-width: 90%;
-    margin: var(--r1);
+    max-width: 95%;
+    margin: var(--r1) auto;
   }
   body .asnd li {
     width: 90%;
@@ -69,11 +51,7 @@
     text-align: center;
   }
   body .asnd img {
-    max-width: 70%;
-  }
-  body .aaboutcont,
-  body .ax8 {
-    width: 100%;
+    max-width: 90%;
   }
 }
 .aaboutcont {
@@ -101,32 +79,31 @@
   display: block;
   margin: auto;
   text-align: center;
-  font-size: var(--r35);
+  font-size: var(--r3);
   color: #ffbf0f;
 }
 .afirst p {
-  font-family: "El Messiri", sans-serif;
+  font-size: var(--r105);
+  font-family: "Noto Sans", serif;
   text-align: justify;
   text-align-last: center;
-  font-size: calc(var(--r1) * 1.1);
   text-transform: capitalize;
 }
 .asnd {
   width: 100%;
   margin: auto;
   display: flex;
-  align-items: flex-start;
+  align-items: center;
   justify-content: space-evenly;
   margin-top: var(--r1);
   margin-bottom: var(--r2);
 }
-.asnd ul {
+a .snd ul {
+  font-family: "Noto Sans", serif;
   max-width: 45%;
-  font-family: "Marhey", cursive;
   display: inline-block;
-  font-size: calc(var(--r1) * 1.4);
+  font-size: var(--r105);
   text-transform: capitalize;
-  font-weight: 700;
   list-style-type: disc;
   margin: var(--r05);
 }
@@ -154,7 +131,7 @@
   display: block;
   margin: auto;
   text-align: center;
-  font-size: var(--r35);
+  font-size: var(--r3);
   color: #ffbf0f;
   margin-top: var(--r1);
   margin-bottom: var(--r2);
@@ -173,8 +150,9 @@
 }
 .asubthrd p {
   text-align: right;
-  font-size: calc(var(--r1) * 1.5);
-  font-family: "El Messiri", sans-serif;
+  font-size: var(--r105);
+  font-family: "Noto Sans", serif;
+  font-weight: bold;
   color: #ffbf0f;
   margin: var(--r1);
   display: inline;

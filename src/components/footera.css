@@ -1,6 +1,6 @@
 @media only screen and (max-width: 807px) {
 }
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 590px) {
   body .amap iframe {
     display: block;
     margin: auto;
@@ -67,7 +67,7 @@
   overflow: hidden;
   margin: auto;
   z-index: 5000;
-  font-size: calc(var(--r1) * 1.5);
+  font-size: var(--r105);
   font-family: "El Messiri", sans-serif;
   color: black;
   text-indent: 0;

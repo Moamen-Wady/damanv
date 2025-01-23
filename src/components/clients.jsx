@@ -2,10 +2,10 @@ import "./clients.css";
 export default function Clients() {
   return (
     <div>
-      <div className=" clientscont">
+      <div className="clientscont">
         <h1>Check Out Our Partners</h1>
 
-        <div className=" clients">
+        <div className="clients">
           <div className="ccard">
             <picture>
               <source srcSet="c1.webp" type="image/webp" />
