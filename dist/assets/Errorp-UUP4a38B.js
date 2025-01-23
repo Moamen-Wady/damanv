@@ -1,1 +1,0 @@
-import{j as e}from"./index-DrNLWQdW.js";function r(){const t={container:{display:"flex",justifyContent:"center",alignItems:"center",height:"60vh",backgroundColor:"transparent",padding:"0 "},text:{fontSize:"6vw",color:"white",fontFamily:"sans-serif"}};return e.jsx("div",{style:t.container,children:e.jsx("h1",{style:t.text,children:"Page Not Found 404"})})}export{r as default};
