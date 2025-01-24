@@ -46,11 +46,16 @@
     margin: auto;
     font-size: var(--r105);
   }
-  body .aadvgrid {
-    width: 95%;
+  body .advgrid {
+    width: 100%;
+    text-align: center;
   }
-  body .aadv {
+  body .advgrid p {
+    text-align: center;
+  }  
+  body .adv {
     width: 90%;
+    text-align: center;
   }
   body .anos p {
     font-size: calc(var(--r1) * 1.5);
@@ -74,7 +79,7 @@
     text-align: center;
   }
   body .aadvcont p {
-    width: 90%;
+    width: 95%;
     margin: auto;
     font-size: var(--r2);
   }

@@ -1,7 +1,8 @@
 import "./footera.css";
+import "../styles/contact.css";
 import { Link } from "react-router-dom";
 
-export default function Footera() {
+export default function Footera({ menuh }) {
   return (
     <footer className="aff">
       <div className="amap">
@@ -119,22 +120,22 @@ export default function Footera() {
 
           <ul className="aful">
             <li className="axl">
-              <Link to="/#mm" className="all">
+              <Link onClick={menuh} to="/#mm" className="afll">
                 <p>الصفحة الرئيسية</p>
               </Link>
             </li>
             <li className="axl">
-              <Link to="/Services#mm" className="all">
+              <Link onClick={menuh} to="/Services#mm" className="afll">
                 <p>الخدمات</p>
               </Link>
             </li>
             <li className="axl">
-              <Link to="/Aboutus#mm" className="all">
+              <Link onClick={menuh} to="/Aboutus#mm" className="afll">
                 <p>اعرف عنا</p>
               </Link>
             </li>
             <li className="axl">
-              <Link to="/Contactus#mm" className="all">
+              <Link onClick={menuh} to="/Contactus#mm" className="afll">
                 <p>تواصل معنا الاّن</p>
               </Link>
             </li>

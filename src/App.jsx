@@ -24,6 +24,20 @@ const AboutusaP = lazy(() => import("./abouta"));
 const ErrorpaP = lazy(() => import("./Errorpa"));
 
 function App() {
+  function menuh() {
+    let hb = document.getElementById("hide");
+    let vb = document.getElementById("view");
+    hb.style.display = "none";
+    vb.style.display = "block";
+    document.getElementById("mobul").style.display = "none";
+  }
+  function menuv() {
+    let hb = document.getElementById("hide");
+    let vb = document.getElementById("view");
+    hb.style.display = "block";
+    vb.style.display = "none";
+    document.getElementById("mobul").style.display = "block";
+  }
   useEffect(() => {
     if (navigator.userAgent.match(/samsung/i)) {
       alert(
@@ -32,6 +46,7 @@ function App() {
       );
     }
   }, []);
+
   function scrollToHash() {
     document.getElementById(window.location.hash?.slice(1))?.scrollIntoView();
   }
@@ -40,7 +55,7 @@ function App() {
     return (
       <Router>
         <Navbar setLang={setLang} />
-        <Ul />
+        <Ul menuh={menuh} menuv={menuv} />
         <Banner />
         <Suspense fallback={<Loading />}>
           <Routes>
@@ -64,7 +79,7 @@ function App() {
             <Route path="*" element={<ErrorpP scrollToHash={scrollToHash} />} />
           </Routes>
           <Prefooter />
-          <Footer />
+          <Footer menuh={menuh} />
         </Suspense>
       </Router>
     );
@@ -72,7 +87,7 @@ function App() {
     return (
       <Router>
         <Navbara setLang={setLang} />
-        <Ula />
+        <Ula menuh={menuh} menuv={menuv} />
         <Banner />
         <Suspense fallback={<Loading />}>
           <Routes>
@@ -99,7 +114,7 @@ function App() {
             />
           </Routes>
           <Prefootera />
-          <Footera />
+          <Footera menuh={menuh} />
         </Suspense>
       </Router>
     );

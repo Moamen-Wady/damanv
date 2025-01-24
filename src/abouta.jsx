@@ -4,7 +4,6 @@ import Clientsa from "./components/clientsa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 
 export default function Aboutusa({ scrollToHash }) {
-
   useEffect(() => scrollToHash(), []);
   return (
     <>
@@ -100,8 +99,8 @@ export default function Aboutusa({ scrollToHash }) {
             </div>
             <div className="asubthrd">
               <div>
-                <p>&#9733; خدمات شفافة وصادقة </p>
                 <p>&#9733; الاستمرار في التعلم والتكيف مع التقنيات الجديدة </p>
+                <p>&#9733; خدمات شفافة وصادقة </p>
               </div>
             </div>
           </AnimationOnScroll>

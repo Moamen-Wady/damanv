@@ -28,6 +28,9 @@
   body .snd ul {
     font-size: var(--r2);
   } */
+  body .thrd {
+    width: 95%;
+  }
 }
 @media only screen and (max-width: 455px) {
   body .snd ul {

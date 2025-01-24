@@ -36,6 +36,9 @@
   body .asnd ul {
     font-size: var(--r2);
   }
+  body .athrd {
+    width: 95%;
+  }
 }
 @media only screen and (max-width: 455px) {
   body .asnd ul {

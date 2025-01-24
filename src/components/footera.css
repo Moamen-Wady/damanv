@@ -1,6 +1,4 @@
-@media only screen and (max-width: 807px) {
-}
-@media only screen and (max-width: 590px) {
+@media only screen and (max-width: 768px) {
   body .amap iframe {
     display: block;
     margin: auto;
@@ -12,23 +10,11 @@
     margin: auto;
     width: 100%;
   }
-}
-@media only screen and (max-width: 500px) {
-  body .axcon {
-    flex-direction: column;
-  }
-  body .aportion {
-    width: 95%;
-  }
-  body .axl {
-    display: inline-block;
-  }
-  body .algsf img {
-    display: inline-block;
-    margin: var(--r1);
+  body .acontact h1 {
+    font-size: var(--r2);
   }
 }
-@media only screen and (max-width: 375px) {
+@media only screen and (max-width: 590px) {
   body .axcon {
     flex-direction: column;
   }
@@ -38,17 +24,30 @@
   body .axl {
     display: inline-block;
   }
+  body .algsf {
+    margin-right: 0;
+  }
   body .algsf img {
     display: inline-block;
     margin: var(--r1);
   }
   body .aful {
-    font-size: calc(var(--r1) * 1.15);
+    font-size: var(--r2);
+  }
+  body .acontact h1 {
+    font-size: calc(var(--r2) * 1.25);
+  }
+  body .acontact p {
+    font-size: calc(var(--r1) * 1.6);
+  }
+  body .acontact a {
+    font-size: var(--r105);
   }
 }
 .aff {
   background: #c99f4b;
   border-top: 1px solid black;
+  direction: rtl;
 }
 .axcon {
   display: flex;
@@ -83,12 +82,12 @@
 .axl::before {
   content: "";
 }
-.all {
+.afll {
   display: inline-block;
   text-decoration: none;
   color: white;
 }
-.axl .all:hover {
+.axl .afll:hover {
   color: var(--black2);
 }
 .aimx {
@@ -110,25 +109,28 @@
   vertical-align: top;
   text-align: center;
   margin: auto;
-  margin-right: var(--r3);
+  margin-right: calc(var(--r2) * 1.25);
   border: 0;
 }
 .acontact h1 {
-  font-size: var(--r2);
+  font-size: var(--r3);
   font-family: "El Messiri", sans-serif;
   text-indent: var(--r1);
+  text-align: right;
 }
 .acontact p {
   display: inline-block;
-  font-size: var(--r1);
+  font-size: calc(var(--r1) * 1.2);
+  font-family: "Noto Sans", sans-serif;
   color: white;
   text-decoration: none;
-  font-family: "El Messiri", sans-serif;
   margin-left: var(--r1);
   margin-right: var(--r1);
+  text-align: right;
 }
 .acontact a {
-  font-size: var(--r1);
+  font-size: calc(var(--r1) * 1.2);
+  font-family: "Noto Sans", sans-serif;
   color: white;
   text-decoration: none;
 }

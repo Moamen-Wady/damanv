@@ -1,7 +1,8 @@
 import "./footer.css";
+import "../styles/contact.css";
 import { Link } from "react-router-dom";
 
-export default function Footer() {
+export default function Footer({ menuh }) {
   return (
     <footer className="ff">
       <div className="map">
@@ -119,22 +120,22 @@ export default function Footer() {
 
           <ul className="ful">
             <li className="xl">
-              <Link to="/#mm" className="ll">
+              <Link onClick={menuh} to="/#mm" className="fll">
                 <p>Home</p>
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Services#mm" className="ll">
+              <Link onClick={menuh} to="/Services#mm" className="fll">
                 <p>Services</p>
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Aboutus#mm" className="ll">
+              <Link onClick={menuh} to="/Aboutus#mm" className="fll">
                 <p>About Us</p>
               </Link>
             </li>
             <li className="xl">
-              <Link to="/Contactus#mm" className="ll">
+              <Link onClick={menuh} to="/Contactus#mm" className="fll">
                 <p>Contact Us Now !</p>
               </Link>
             </li>

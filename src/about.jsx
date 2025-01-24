@@ -107,8 +107,8 @@ export default function Aboutus({ scrollToHash }) {
             </div>
             <div className="subthrd">
               <div>
-                <p>&#9733; Honest and transparent services. </p>
                 <p>&#9733; Keep learning and adapting to new technologies. </p>
+                <p>&#9733; Honest and transparent services. </p>
               </div>
             </div>
           </AnimationOnScroll>

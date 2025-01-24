@@ -47,10 +47,15 @@
     font-size: var(--r105);
   }
   body .advgrid {
-    width: 95%;
+    width: 100%;
+    text-align: center;
   }
+  body .advgrid p {
+    text-align: center;
+  }  
   body .adv {
     width: 90%;
+    text-align: center;
   }
   body .nos p {
     font-size: calc(var(--r1) * 1.5);
@@ -74,7 +79,7 @@
     text-align: center;
   }
   body .advcont p {
-    width: 90%;
+    width: 95%;
     margin: auto;
     font-size: var(--r2);
   }
@@ -243,6 +248,7 @@
   color: white;
 }
 .adv {
+  text-align: justify;
   width: 80%;
   margin: auto;
   margin-top: var(--r1);
@@ -250,7 +256,6 @@
   display: flex;
   align-items: flex-start;
   justify-content: space-evenly;
-  text-align: justify;
 }
 .advcont > p {
   font-size: calc(var(--r1) * 1.2);
@@ -289,11 +294,11 @@
   width: 100%;
 }
 .advgrid p {
+  text-align: left;
   display: inline-block;
   width: 60%;
   font-family: "Noto Sans", serif;
   font-weight: 300;
-  text-align: left;
   font-size: calc(var(--r1) * 1.2);
   color: white;
 }
