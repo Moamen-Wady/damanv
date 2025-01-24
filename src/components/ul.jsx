@@ -6,7 +6,7 @@ export default function Ul() {
       <ul className="ul1">
         <picture>
           <source srcSet="logo.webp" type="image/webp" />
-          <img className="img1" src="logo.png" alt="" />
+          <img className="img1" src="logo.png" alt="" loading="lazy" />
         </picture>
         <li className="l">
           <Link to="/#mm" className="ll">

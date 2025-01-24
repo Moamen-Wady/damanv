@@ -9,9 +9,9 @@ export default function Errorpa() {
       padding: "0",
     },
     text: {
-      fontSize: "6vw",
+      fontSize: "5vw",
       color: "white",
-      fontFamily: "sans-serif",
+      fontFamily: " 'El Messiri', sans-serif",
     },
   };
 
@@ -20,6 +20,4 @@ export default function Errorpa() {
       <h1 style={styles.text}>الصفحة غير موجودة 404</h1>
     </div>
   );
-};
-
-
+}

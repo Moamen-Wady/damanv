@@ -35,13 +35,16 @@ export default function Banner() {
   const slides = [
     {
       img: "/1.webp",
+      fallback: "/1.jpg",
     },
     {
       img: "/2.webp",
+      fallback: "/2.jpg",
     },
     {
       img: "/3.webp",
-    }
+      fallback: "/3.jpg",
+    },
   ];
 
   return (
@@ -53,11 +56,15 @@ export default function Banner() {
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={`SlideImg ${index + 1}`}>
-            <img
-              className="slide-image"
-              src={slide.img}
-              alt={`Slide ${index + 1}`}
-            />
+            <picture>
+              <source srcSet={slide.img} type="image/webp" />
+              <img
+                className="slide-image"
+                src={slide.fallback}
+                alt={`Slide ${index + 1}`}
+                loading="lazy"
+              />
+            </picture>
           </div>
         ))}
       </Slider>

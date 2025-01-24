@@ -218,7 +218,7 @@
   transition-delay: 0s;
   transition-timing-function: ease-in-out;
   box-sizing: border-box;
-  background-image: url("/bg.jpg");
+  background-image: image-set(url("/bg.webp"), url("/bg.jpg"));
   background-attachment: fixed;
   background-size: cover;
   background-position: center;

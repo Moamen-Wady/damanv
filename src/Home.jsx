@@ -1,5 +1,6 @@
 import { useEffect } from "react";
 import "./styles/home.css";
+import "./styles/services.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Clients from "./components/clients";
 

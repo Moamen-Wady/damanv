@@ -11,7 +11,7 @@ export default function Navbar({ setLang }) {
               <span>
                 <picture>
                   <source srcSet="uk.webp" type="image/webp" />
-                  <img src="uk.png" alt="" />
+                  <img src="uk.png" alt="" loading="lazy" />
                 </picture>
               </span>
               <div className="langc">
@@ -30,7 +30,7 @@ export default function Navbar({ setLang }) {
             >
               <picture>
                 <source srcSet="fb.webp" type="image/webp" />
-                <img src="fb.png" alt="" />
+                <img src="fb.png" alt="" loading="lazy" />
               </picture>
             </a>
             <a
@@ -40,7 +40,7 @@ export default function Navbar({ setLang }) {
             >
               <picture>
                 <source srcSet="ig.webp" type="image/webp" />
-                <img src="ig.png" alt="" />
+                <img src="ig.png" alt="" loading="lazy" />
               </picture>
             </a>
             <a
@@ -50,7 +50,7 @@ export default function Navbar({ setLang }) {
             >
               <picture>
                 <source srcSet="li.webp" type="image/webp" />
-                <img src="li.png" alt="" />
+                <img src="li.png" alt="" loading="lazy" />
               </picture>
             </a>
             <a
@@ -60,7 +60,7 @@ export default function Navbar({ setLang }) {
             >
               <picture>
                 <source srcSet="tw.webp" type="image/webp" />
-                <img src="tw.png" alt="" />
+                <img src="tw.png" alt="" loading="lazy" />
               </picture>
             </a>
           </div>

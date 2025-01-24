@@ -9,9 +9,9 @@ export default function Errorp() {
       padding: "0 ",
     },
     text: {
-      fontSize: "6vw",
+      fontSize: "5vw",
       color: "white",
-      fontFamily: "sans-serif",
+      fontFamily: " 'El Messiri', sans-serif",
     },
   };
 

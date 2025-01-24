@@ -7,7 +7,7 @@ export default function Ula() {
       <li className="al limg">
         <picture>
           <source srcSet="logo.webp" type="image/webp" />
-          <img className="aimg1" src="logo.png" alt="" />
+          <img className="aimg1" src="logo.png" alt="" loading="lazy" />
         </picture>
       </li>
       <li className="al">
