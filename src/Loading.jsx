@@ -20,10 +20,9 @@ export default function Loading() {
       width: "12vw",
       height: "12vw",
       display: "block",
-      marging: "auto",
+      margin: "auto",
     },
   };
-  console.log("Loading");
   return (
     <div style={styles.container}>
       <picture>
