@@ -33,14 +33,12 @@ function App() {
         "Your browser (Samsung Internet) may not show this website's colors correctly in Dark Mode with setting: 'use dark mode: always/when phone dark mode is on' or when option: 'dark theme sites' is checked. Please choose 'light theme websites' or consider using a standards-compliant browser instead. \n\n" +
           "We recommend Firefox, Microsoft Edge, or Google Chrome."
       );
-      return;
     }
   }, []);
- 
-  function scrollToHash() {
-    document.getElementById(window.location.hash?.slice(1))?.scrollIntoView();
-  }
 
+  const scrollToHash = useCallback(() => {
+    document.getElementById(window.location.hash?.slice(1))?.scrollIntoView();
+  }, []);
   const menuh = useCallback(() => {
     let hb = document.getElementById("hide");
     let vb = document.getElementById("view");
@@ -57,7 +55,7 @@ function App() {
   }, []);
 
   // yes, using state with language to hide it from url
-  // it is usually better to put it in a query in url and read it from there 
+  // it is usually better to put it in a query in url and read it from there
   // this is a small, manually translated project so why not
   const [lang, setLang] = useState("en");
 
