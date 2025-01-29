@@ -152,7 +152,7 @@ export default function Footer({ menuh }) {
             <p>
               <picture>
                 <source srcSet="location.webp" type="image/webp" />
-                <img src="location.png" loading="lazy" alt="location" />{" "}
+                <img src="location.png" loading="lazy" alt="location" />
                 Business Center 1, M Floor , The Meydan Hotel, Nad Al Sheba,
                 Dubai , U.A.E.
               </picture>

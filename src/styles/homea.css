@@ -121,14 +121,14 @@
   width: 80%;
   display: block;
   margin: auto;
-  border: 1px dashed goldenrod;
+  border: 1px dashed #daa520;
   border-radius: 5%;
 }
 .atelt h1 {
   font-family: "El Messiri", sans-serif;
   font-weight: 500;
   font-size: var(--r2);
-  color: #ffbf0f;
+  color: #daa520;
   margin: var(--r05);
 }
 .atelt p {
@@ -162,7 +162,7 @@
 .anos h1 {
   font-family: "El Messiri", sans-serif;
   font-size: var(--r3);
-  color: #ffbf0f;
+  color: #daa520;
   margin: var(--r5);
   display: block;
   margin: auto;
@@ -196,7 +196,7 @@
 .anos1 h1 {
   font-family: "El Messiri", sans-serif;
   font-size: var(--r3);
-  color: #ffbf0f;
+  color: #daa520;
   text-align: right;
   margin: 0;
 }
@@ -221,7 +221,7 @@
   display: block;
   margin: auto;
   padding: 1px;
-  border: 1px dashed goldenrod;
+  border: 1px dashed #daa520;
 }
 .aidea p {
   font-size: calc(var(--r1) * 1.2);
@@ -238,7 +238,7 @@
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   font-size: var(--r2);
-  color: #ffbf0f;
+  color: #daa520;
 }
 .aadvcont {
   overflow: hidden;

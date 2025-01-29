@@ -99,7 +99,7 @@
   background-position: center;
 }
 .anvbr {
-  background: linear-gradient(#ffbf0f, transparent);
+  background: linear-gradient(#daa520, transparent);
   display: block;
   height: max-content;
   max-height: fit-content;
@@ -215,7 +215,7 @@
   height: var(--r2);
 }
 .ar .all:hover {
-  background: #ffbf0f;
+  background: #daa520;
 }
 .al .all {
   display: block;
@@ -234,7 +234,7 @@
   margin: 0;
 }
 .al .all:hover {
-  background: #ffbf0f;
+  background: #daa520;
 }
 .aul1 .aimg1 {
   width: var(--r5);

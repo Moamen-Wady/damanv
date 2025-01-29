@@ -16,7 +16,7 @@
 .aprf {
   align-items: flex-start;
   justify-content: space-evenly;
-  border: 2px dashed #ffbf0f;
+  border: 2px dashed #daa520;
   width: 80%;
   margin: auto;
   margin-top: var(--r1);
@@ -36,7 +36,7 @@
 }
 .aleft h1 {
   font-size: var(--r3);
-  color: #ffbf0f;
+  color: #daa520;
   text-align: center;
   margin-top: var(--r1);
   margin-bottom: var(--r2);
@@ -51,7 +51,7 @@
 }
 .aright h1 {
   font-size: var(--r3);
-  color: #ffbf0f;
+  color: #daa520;
   text-align: center;
   margin-top: var(--r1);
   margin-bottom: var(--r1);

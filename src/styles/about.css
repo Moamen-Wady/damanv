@@ -75,7 +75,7 @@
   margin: auto;
   text-align: center;
   font-size: var(--r3);
-  color: #ffbf0f;
+  color: #daa520;
 }
 .first p {
   font-size: var(--r105);
@@ -127,7 +127,7 @@
   margin: auto;
   text-align: center;
   font-size: var(--r3);
-  color: #ffbf0f;
+  color: #daa520;
   margin-top: var(--r1);
   margin-bottom: var(--r2);
 }
@@ -148,7 +148,7 @@
   font-size: var(--r105);
   font-family: "Noto Sans", serif;
   font-weight: bold;
-  color: #ffbf0f;
+  color: #daa520;
   margin: var(--r1);
   display: inline;
   text-transform: capitalize;

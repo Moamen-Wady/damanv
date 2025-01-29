@@ -76,9 +76,7 @@
   }
 }
 :root {
-  --black: rgb(26, 24, 24);
   --black2: rgb(48, 43, 43);
-  --gold: rgb(219, 216, 28);
 }
 body {
   padding: 0;

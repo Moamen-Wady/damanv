@@ -49,10 +49,6 @@ export default function Banner() {
 
   return (
     <div className="slideshow-container">
-      {/* <p className="onslider">
-        We are now the Authorized Distributor of Lectrobar in Egypt
-      </p>
-      <img src="/btw.png" className="shade" /> */}
       <Slider {...settings}>
         {slides.map((slide, index) => (
           <div key={`SlideImg ${index + 1}`}>

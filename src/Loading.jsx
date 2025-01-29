@@ -8,6 +8,10 @@ export default function Loading() {
       backgroundColor: "transparent",
       padding: "0 ",
       flexDirection: "column",
+      position: "absolute",
+      top: "50%",
+      left: "50%",
+      transform: "translate(-50%,-50%)",
     },
     text: {
       fontSize: "5vw",
@@ -25,10 +29,7 @@ export default function Loading() {
   };
   return (
     <div style={styles.container}>
-      <picture>
-        <source srcSet="logo.webp" type="image/webp" />
-        <img src="logo.png" alt="Loading" style={styles.img} />
-      </picture>
+      <img src="loading.gif" alt="Loading" style={styles.img} />
       <h1 style={styles.text}>Loading...</h1>
     </div>
   );

@@ -1,7 +1,8 @@
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 import "./styles/abouta.css";
 import Clientsa from "./components/clientsa";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+const ClientsaC = memo(Clientsa);
 
 export default function Aboutusa({ scrollToHash }) {
   useEffect(() => scrollToHash(), []);
@@ -106,7 +107,7 @@ export default function Aboutusa({ scrollToHash }) {
           </AnimationOnScroll>
         </div>
         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
-          <Clientsa />
+          <ClientsaC />
         </AnimationOnScroll>
       </div>
     </>

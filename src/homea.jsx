@@ -1,8 +1,9 @@
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 import "./styles/homea.css";
 import "./styles/servicesa.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Clientsa from "./components/clientsa";
+const ClientsaC = memo(Clientsa);
 
 export default function Homea({ scrollToHash }) {
   useEffect(() => scrollToHash(), []);
@@ -380,7 +381,7 @@ export default function Homea({ scrollToHash }) {
         </AnimationOnScroll>
 
         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
-          <Clientsa />
+          <ClientsaC />
         </AnimationOnScroll>
       </div>
     </>
