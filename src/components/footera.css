@@ -1,4 +1,7 @@
 @media only screen and (max-width: 768px) {
+  body .amap {
+    flex-wrap: wrap;
+  }
   body .amap iframe {
     display: block;
     margin: auto;
@@ -143,8 +146,10 @@
 }
 .amap {
   width: 100%;
-  display: block;
+  display: flex;
   margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .amap iframe {
   width: 45%;

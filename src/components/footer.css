@@ -1,4 +1,7 @@
 @media only screen and (max-width: 768px) {
+  body .map {
+    flex-wrap: wrap;
+  }
   body .map iframe {
     display: block;
     margin: auto;
@@ -24,7 +27,7 @@
   body .xl {
     display: inline-block;
   }
-  body .lgsf  {
+  body .lgsf {
     margin-right: 0;
   }
   body .lgsf img {
@@ -35,7 +38,7 @@
     font-size: var(--r2);
   }
   body .contact h1 {
-    font-size: calc(var(--r2)*1.25);
+    font-size: calc(var(--r2) * 1.25);
   }
   body .contact p {
     font-size: var(--r105);
@@ -140,8 +143,10 @@
 }
 .map {
   width: 100%;
-  display: block;
+  display: flex;
   margin: auto;
+  align-items: center;
+  justify-content: space-evenly;
 }
 .map iframe {
   width: 45%;

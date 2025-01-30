@@ -1,13 +1,36 @@
 import "./footera.css";
 import "../styles/contact.css";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 export default function Footera({ menuh }) {
+    useEffect(() => {
+      const handleOrientationChange = () => {
+        if (window.innerWidth > 768) {
+          let formHeight = document.getElementById("contactCont").clientHeight;
+          document.getElementById("mf").style.height = formHeight + "px";
+        } else {
+          document.getElementById("mf").removeAttribute("style");
+        }
+      };
+  
+      window.screen.orientation.addEventListener(
+        "change",
+        handleOrientationChange
+      );
+      handleOrientationChange();
+      return () =>
+        window.screen.orientation.removeEventListener(
+          "change",
+          handleOrientationChange
+        );
+    }, []);
+  
   return (
     <footer className="aff">
       <div className="amap">
         <div className="xfc">
-          <div className="container">
+          <div className="container" id="contactCont">
             <div className="form">
               <picture>
                 <source srcSet="logo.webp" type="image/webp" />
@@ -67,6 +90,7 @@ export default function Footera({ menuh }) {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           title="location"
+          id="mf"
         ></iframe>
       </div>
       <div className="axcon">
