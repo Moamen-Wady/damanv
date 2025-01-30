@@ -147,7 +147,7 @@
   width: 45%;
   height: calc(var(--r5) * 7.5);
   display: inline-block;
-  margin: auto;
+  margin: var(--r2) auto;
   border: 2px solid white;
   border-radius: 5%;
 }
