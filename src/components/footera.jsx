@@ -1,10 +1,10 @@
 import "./footera.css";
 import "../styles/contact.css";
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
+import { useLayoutEffect } from "react";
 
 export default function Footera({ menuh }) {
-    useEffect(() => {
+    useLayoutEffect(() => {
       const handleOrientationChange = () => {
         if (window.innerWidth > 768) {
           let formHeight = document.getElementById("contactCont").clientHeight;

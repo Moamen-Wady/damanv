@@ -33,7 +33,7 @@ function App() {
   const setterLang = useCallback(function (x) {
     setLang(x);
     localStorage.setItem("lang", x);
-  } [);
+  }, []);
   useEffect(() => {
     if (navigator.userAgent.match(/samsung/i)) {
       alert(
