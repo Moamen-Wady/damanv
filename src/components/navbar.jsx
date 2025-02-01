@@ -1,6 +1,6 @@
 import "./navbar.css";
 
-export default function Navbar({ setLang }) {
+export default function Navbar({ setterLang }) {
   return (
     <div className="nvbr" id="mm">
       <div className="topbar">
@@ -15,10 +15,10 @@ export default function Navbar({ setLang }) {
                 </picture>
               </span>
               <div className="langc">
-                <button onClick={() => setLang("en")} className="lanlink">
+                <button onClick={() => setterLang("en")} className="lanlink">
                   English
                 </button>
-                <button onClick={() => setLang("ar")} className="lanlink">
+                <button onClick={() => setterLang("ar")} className="lanlink">
                   العربية
                 </button>
               </div>

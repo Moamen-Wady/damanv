@@ -30,6 +30,10 @@ const ErrorpaP = lazy(() => import("./Errorpa"));
 
 function App() {
   let [lang, setLang] = useState(localStorage.getItem("lang") || "en");
+  const setterLang = useCallback(function (x) {
+    setLang(x);
+    localStorage.setItem("lang", x);
+  });
   useEffect(() => {
     if (navigator.userAgent.match(/samsung/i)) {
       alert(
@@ -78,7 +82,7 @@ function App() {
       <Suspense fallback={<LoadingC />}>
         {lang === "en" ? (
           <>
-            <Navbar setLang={setLang} />
+            <Navbar setterLang={setterLang} />
             <Ul menuh={menuh} menuv={menuv} />
             <Banner />
             <Routes>
@@ -111,7 +115,7 @@ function App() {
           </>
         ) : (
           <>
-            <Navbara setLang={setLang} />
+            <Navbara setterLang={setterLang} />
             <Ula menuh={menuh} menuv={menuv} />
             <Banner />
             <Routes>
