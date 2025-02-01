@@ -1,5 +1,7 @@
 import "./styles/styles.css";
-import "animate.css/animate.min.css";
+import { Slide, ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
+import "animate.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { useEffect, useState, lazy, Suspense, useCallback, memo } from "react";
 import Loading from "./Loading";
@@ -27,6 +29,7 @@ const AboutusaP = lazy(() => import("./abouta"));
 const ErrorpaP = lazy(() => import("./Errorpa"));
 
 function App() {
+  let [lang, setLang] = useState(localStorage.getItem("lang") || "en");
   useEffect(() => {
     if (navigator.userAgent.match(/samsung/i)) {
       alert(
@@ -39,6 +42,7 @@ function App() {
   const scrollToHash = useCallback(() => {
     document.getElementById(window.location.hash?.slice(1))?.scrollIntoView();
   }, []);
+
   const menuh = useCallback(() => {
     let hb = document.getElementById("hide");
     let vb = document.getElementById("view");
@@ -54,13 +58,23 @@ function App() {
     document.getElementById("mobul").style.display = "block";
   }, []);
 
-  // yes, using state with language to hide it from url
-  // it is usually better to put it in a query in url and read it from there
-  // this is a small, manually translated project so why not
-  const [lang, setLang] = useState("en");
+  const notify = useCallback((e, msg) => {
+    toast[e](msg, {
+      position: "top-center",
+      autoClose: 1500,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+      theme: "light",
+      transition: Slide,
+    });
+  }, []);
 
   return (
     <Router>
+      <ToastContainer />
       <Suspense fallback={<LoadingC />}>
         {lang === "en" ? (
           <>
@@ -75,7 +89,9 @@ function App() {
               />
               <Route
                 path="/Contactus"
-                element={<ContactUsP scrollToHash={scrollToHash} />}
+                element={
+                  <ContactUsP scrollToHash={scrollToHash} notify={notify} />
+                }
               />
               <Route
                 path="/Services"
@@ -109,7 +125,9 @@ function App() {
               />
               <Route
                 path="/Contactus"
-                element={<ContactUsP scrollToHash={scrollToHash} />}
+                element={
+                  <ContactUsP scrollToHash={scrollToHash} notify={notify} />
+                }
               />
               <Route
                 path="/Services"

@@ -40,7 +40,7 @@
   overflow: hidden;
   border-radius: var(--r1);
   border: 3px solid black;
-  margin:var(--r2) auto;
+  margin: var(--r2) auto;
   padding: var(--r2);
   padding-left: 0;
   font-family: "Noto Sans", sans-serif;
@@ -84,6 +84,7 @@
   background-color: rgb(240, 234, 186);
   color: black;
   font-size: calc(var(--r1) * 1.2);
+  cursor: pointer;
 }
 .form textarea {
   height: var(--r5);
