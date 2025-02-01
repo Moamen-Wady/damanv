@@ -1,35 +1,24 @@
 <?php
-// Retrieve form data from $_POST superglobal
 $name = $_POST['name'];
 $email = $_POST['email'];
 $phone = $_POST['phone'];
-$activity = $_POST['activity'];
-$residence = $_POST['residence'];
-$notes = $_POST['notes'];
+$message = $_POST['message'];
 
-// Set recipient email address and email subject
-$to = "moamen.wady@gmail.com";
-$subject = "New daman glitch form submission: $name";
+$to = " moamen.wady@gmail.com";
+$subject = "New Daman profile form submission: $name";
 
-// Build email body with form data
 $body = "Name: $name\n";
 $body .= "Email: $email\n";
 $body .= "Phone: $phone\n";
-$body .= "Activity: $activity\n";
-$body .= "Number of Residence: $residence\n";
-$body .= "Notes: $notes\n";
+$body .= "Message: $message\n";
 
-// Set email headers
 $headers = "From: $email\r\n";
 $headers .= "Reply-To: $email\r\n";
 
-// Send email
-mail($to, $subject, $body, $headers);
-
-// Redirect to thank-you page
-
-
-header("Location: thankyou.html");
-
+if (mail($to, $subject, $body, $headers)) {
+    echo "Message sent successfully!";
+} else {
+    echo "Failed to send message.";
+}
 exit();
 ?>
