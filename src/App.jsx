@@ -30,10 +30,36 @@ const ErrorpaP = lazy(() => import("./Errorpa"));
 
 function App() {
   let [lang, setLang] = useState(localStorage.getItem("lang") || "en");
+  var [dissub, setDissub] = useState([false, "all", "white", "black"]);
+
   const setterLang = useCallback(function (x) {
     setLang(x);
     localStorage.setItem("lang", x);
   }, []);
+
+  const sForm = useCallback(async (e) => {
+    e.preventDefault();
+    setDissub([true, "none", "grey", "black"]);
+    notify("info", "Please Wait...");
+    const formData = new FormData(document.getElementById("form"));
+    await api
+      .post("/submit.php", formData)
+      .then((data) => {
+        if (data.data === "Message sent successfully!") {
+          notify("success", "Message Sent Successfully!");
+          document.getElementById("form").reset();
+          setDissub([false, "all", "white", "black"]);
+        } else {
+          notify("error", "Failed to Send Message, Please Try Again");
+          setDissub([false, "all", "white", "black"]);
+        }
+      })
+      .catch(() => {
+        notify("error", "Server Error, Please Try Again");
+        setDissub([false, "all", "white", "black"]);
+      });
+  }, []);
+
   useEffect(() => {
     if (navigator.userAgent.match(/samsung/i)) {
       alert(
@@ -94,7 +120,11 @@ function App() {
               <Route
                 path="/Contactus"
                 element={
-                  <ContactUsP scrollToHash={scrollToHash} notify={notify} />
+                  <ContactUsP
+                    scrollToHash={scrollToHash}
+                    dissub={dissub}
+                    sForm={sForm}
+                  />
                 }
               />
               <Route
@@ -111,7 +141,7 @@ function App() {
               />
             </Routes>
             <Prefooter />
-            <Footer menuh={menuh} />
+            <Footer menuh={menuh} dissub={dissub} sForm={sForm} />
           </>
         ) : (
           <>
@@ -130,7 +160,11 @@ function App() {
               <Route
                 path="/Contactus"
                 element={
-                  <ContactUsP scrollToHash={scrollToHash} notify={notify} />
+                  <ContactUsP
+                    scrollToHash={scrollToHash}
+                    dissub={dissub}
+                    sForm={sForm}
+                  />
                 }
               />
               <Route
@@ -147,7 +181,7 @@ function App() {
               />
             </Routes>
             <Prefootera />
-            <Footera menuh={menuh} />
+            <Footera menuh={menuh} dissub={dissub} sForm={sForm} />
           </>
         )}
       </Suspense>

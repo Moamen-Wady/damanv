@@ -3,29 +3,29 @@ import "../styles/contact.css";
 import { Link } from "react-router-dom";
 import { useLayoutEffect } from "react";
 
-export default function Footera({ menuh }) {
-    useLayoutEffect(() => {
-      const handleOrientationChange = () => {
-        if (window.innerWidth > 768) {
-          let formHeight = document.getElementById("contactCont").clientHeight;
-          document.getElementById("mf").style.height = formHeight + "px";
-        } else {
-          document.getElementById("mf").removeAttribute("style");
-        }
-      };
-  
-      window.screen.orientation.addEventListener(
+export default function Footera({ menuh, sForm, dissub }) {
+  useLayoutEffect(() => {
+    const handleOrientationChange = () => {
+      if (window.innerWidth > 768) {
+        let formHeight = document.getElementById("contactCont").clientHeight;
+        document.getElementById("mf").style.height = formHeight + "px";
+      } else {
+        document.getElementById("mf").removeAttribute("style");
+      }
+    };
+
+    window.screen.orientation.addEventListener(
+      "change",
+      handleOrientationChange
+    );
+    handleOrientationChange();
+    return () =>
+      window.screen.orientation.removeEventListener(
         "change",
         handleOrientationChange
       );
-      handleOrientationChange();
-      return () =>
-        window.screen.orientation.removeEventListener(
-          "change",
-          handleOrientationChange
-        );
-    }, []);
-  
+  }, []);
+
   return (
     <footer className="aff">
       <div className="amap">
@@ -37,7 +37,7 @@ export default function Footera({ menuh }) {
                 <img src="/logo.png" loading="lazy" alt="" />
               </picture>
               <p>Required Informations</p>
-              <form action="submit.php" method="post" id="form">
+              <form onSubmit={sForm} method="post" id="form">
                 <input
                   type="text"
                   id="name"
@@ -79,7 +79,16 @@ export default function Footera({ menuh }) {
                   placeholder="Notes / ملاحظات"
                 ></textarea>
 
-                <input type="submit" value="Submit" />
+                <input
+                  type="submit"
+                  value="Submit"
+                  disabled={dissub[0]}
+                  style={{
+                    backgroundColor: dissub[2],
+                    pointerEvents: dissub[1],
+                    color: dissub[3],
+                  }}
+                />
               </form>
             </div>
           </div>

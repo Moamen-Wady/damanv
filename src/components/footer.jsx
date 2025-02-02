@@ -3,7 +3,7 @@ import "../styles/contact.css";
 import { Link } from "react-router-dom";
 import { useLayoutEffect } from "react";
 
-export default function Footer({ menuh }) {
+export default function Footer({ menuh, sForm, dissub }) {
   useLayoutEffect(() => {
     const handleOrientationChange = () => {
       if (window.innerWidth > 768) {
@@ -36,7 +36,7 @@ export default function Footer({ menuh }) {
                 <img src="/logo.png" loading="lazy" alt="" />
               </picture>
               <p>Required Informations</p>
-              <form action="submit.php" method="post" id="form">
+              <form onSubmit={sForm} method="post" id="form">
                 <input
                   type="text"
                   id="name"
@@ -78,7 +78,16 @@ export default function Footer({ menuh }) {
                   placeholder="Notes / ملاحظات"
                 ></textarea>
 
-                <input type="submit" value="Submit" />
+                <input
+                  type="submit"
+                  value="Submit"
+                  disabled={dissub[0]}
+                  style={{
+                    backgroundColor: dissub[2],
+                    pointerEvents: dissub[1],
+                    color: dissub[3],
+                  }}
+                />
               </form>
             </div>
           </div>

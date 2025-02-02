@@ -1,32 +1,6 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import "./styles/contact.css";
-import api from "./api";
-export default function Contactus({ scrollToHash, notify }) {
-  var [dissub, setDissub] = useState([false, "all", "white", "black"]);
-
-  async function sForm(e) {
-    e.preventDefault();
-    setDissub([true, "none", "grey", "black"]);
-    notify("info", "Please Wait...");
-    const formData = new FormData(document.getElementById("contactForm"));
-    await api
-      .post("/submit.php", formData)
-      .then((data) => {
-        if (data.data === "Message sent successfully!") {
-          notify("success", "Message Sent Successfully!");
-          document.getElementById("form").reset();
-          setDissub([false, "all", "white", "black"]);
-        } else {
-          notify("error", "Failed to Send Message, Please Try Again");
-          setDissub([false, "all", "white", "black"]);
-        }
-      })
-      .catch(() => {
-        notify("error", "Server Error, Please Try Again");
-        setDissub([false, "all", "white", "black"]);
-      });
-  }
-
+export default function Contactus({ scrollToHash, sForm, dissub }) {
   useEffect(() => scrollToHash(), []);
 
   return (
