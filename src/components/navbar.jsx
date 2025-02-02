@@ -1,6 +1,7 @@
+import { memo } from "react";
 import "./navbar.css";
 
-export default function Navbar({ setterLang }) {
+export default memo(function Navbar({ setterLang }) {
   return (
     <div className="nvbr" id="mm">
       <div className="topbar">
@@ -68,4 +69,4 @@ export default function Navbar({ setterLang }) {
       </div>
     </div>
   );
-}
+});

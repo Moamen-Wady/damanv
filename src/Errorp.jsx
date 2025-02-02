@@ -1,4 +1,6 @@
-export default function Errorp() {
+import { memo } from "react";
+
+export default memo(function Errorp() {
   const styles = {
     container: {
       display: "flex",
@@ -20,4 +22,4 @@ export default function Errorp() {
       <h1 style={styles.text}>Page Not Found 404</h1>
     </div>
   );
-}
+});

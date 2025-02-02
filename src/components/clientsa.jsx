@@ -1,5 +1,6 @@
+import { memo } from "react";
 import "./clientsa.css";
-export default function Clientsa() {
+export default memo(function Clientsa() {
   return (
     <div>
       <div className="aclientscont">
@@ -34,4 +35,4 @@ export default function Clientsa() {
       </div>
     </div>
   );
-}
+});

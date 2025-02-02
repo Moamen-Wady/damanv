@@ -1,8 +1,9 @@
 import "./prefooter.css";
 import { Link } from "react-router-dom";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import { memo } from "react";
 
-export default function Prefooter() {
+export default memo(function Prefooter() {
   return (
     <AnimationOnScroll animateOnce={true} animateIn="animate__fadeInDown">
       <div className="prf">
@@ -26,4 +27,4 @@ export default function Prefooter() {
       </div>
     </AnimationOnScroll>
   );
-}
+});

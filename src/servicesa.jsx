@@ -2,9 +2,8 @@ import "./styles/servicesa.css";
 import { useEffect, memo } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Clientsa from "./components/clientsa";
-const ClientsaC = memo(Clientsa);
 
-export default function Servicesa({ scrollToHash }) {
+export default memo(function Servicesa({ scrollToHash }) {
   useEffect(() => scrollToHash(), []);
   return (
     <>
@@ -127,10 +126,10 @@ export default function Servicesa({ scrollToHash }) {
           </div>
         </div>
         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
-          <ClientsaC />
+          <Clientsa />
         </AnimationOnScroll>
       </div>
       <hr style={{ width: "80%" }} />
     </>
   );
-}
+});

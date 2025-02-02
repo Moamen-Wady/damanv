@@ -1,7 +1,8 @@
 /*#view, #hide, #mobul and .img DON'T have a in the beginning of them*/
+import { memo } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-export default function Ula({ menuh, menuv }) {
+export default memo(function Ula({ menuh, menuv }) {
   return (
     <>
       <ul className="adsk aul1">
@@ -75,3 +76,4 @@ export default function Ula({ menuh, menuv }) {
     </>
   );
 }
+)

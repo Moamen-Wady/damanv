@@ -3,9 +3,8 @@ import "./styles/home.css";
 import "./styles/services.css";
 import { AnimationOnScroll } from "react-animation-on-scroll";
 import Clients from "./components/clients";
-const ClientsC = memo(Clients);
 
-export default function Home({ scrollToHash }) {
+export default memo(function Home({ scrollToHash }) {
   useEffect(() => scrollToHash(), []);
 
   return (
@@ -403,8 +402,8 @@ export default function Home({ scrollToHash }) {
       </AnimationOnScroll>
 
       <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
-        <ClientsC/>
+        <Clients />
       </AnimationOnScroll>
     </>
   );
-}
+});

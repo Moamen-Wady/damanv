@@ -1,6 +1,6 @@
-import { useEffect } from "react";
+import { useEffect, memo } from "react";
 import "./styles/contact.css";
-export default function Contactus({ scrollToHash, sForm, dissub }) {
+export default memo(function Contactus({ scrollToHash, sForm, dissub }) {
   useEffect(() => scrollToHash(), []);
 
   return (
@@ -74,4 +74,4 @@ export default function Contactus({ scrollToHash, sForm, dissub }) {
       </div>
     </>
   );
-}
+});

@@ -1,6 +1,7 @@
+import { memo } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";
-export default function Ul({ menuh, menuv }) {
+export default memo(function Ul({ menuh, menuv }) {
   return (
     <>
       <ul className="dsk ul1">
@@ -74,3 +75,4 @@ export default function Ul({ menuh, menuv }) {
     </>
   );
 }
+)

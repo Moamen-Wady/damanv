@@ -3,11 +3,9 @@ import { Slide, ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "animate.css";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import { useEffect, useState, lazy, Suspense, useCallback, memo } from "react";
+import { useEffect, useState, lazy, Suspense, useCallback } from "react";
 import Loading from "./Loading";
-
-const LoadingC = memo(Loading);
-
+import api from "./api";
 const Navbar = lazy(() => import("./components/navbar"));
 const Ul = lazy(() => import("./components/ul"));
 const Banner = lazy(() => import("./components/banner"));
@@ -105,7 +103,7 @@ function App() {
   return (
     <Router>
       <ToastContainer />
-      <Suspense fallback={<LoadingC />}>
+      <Suspense fallback={<Loading />}>
         {lang === "en" ? (
           <>
             <Navbar setterLang={setterLang} />

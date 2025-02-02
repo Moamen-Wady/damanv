@@ -1,4 +1,6 @@
-export default function Loading() {
+import { memo } from "react";
+
+export default memo(function Loading() {
   const styles = {
     container: {
       display: "flex",
@@ -33,4 +35,4 @@ export default function Loading() {
       <h1 style={styles.text}>Loading...</h1>
     </div>
   );
-}
+});

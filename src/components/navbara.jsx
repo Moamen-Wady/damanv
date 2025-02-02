@@ -1,6 +1,7 @@
+import { memo } from "react";
 import "./navbara.css";
 
-export default function Navbara({ setterLang }) {
+export default memo(function Navbara({ setterLang }) {
   return (
     <div className="anvbr" id="mm">
       <div className="atopbar">
@@ -68,4 +69,4 @@ export default function Navbara({ setterLang }) {
       </div>
     </div>
   );
-}
+});

@@ -1,9 +1,9 @@
 import "./footera.css";
 import "../styles/contact.css";
 import { Link } from "react-router-dom";
-import { useLayoutEffect } from "react";
+import { useLayoutEffect, memo } from "react";
 
-export default function Footera({ menuh, sForm, dissub }) {
+export default memo(function Footera({ menuh, sForm, dissub }) {
   useLayoutEffect(() => {
     const handleOrientationChange = () => {
       if (window.innerWidth > 768) {
@@ -211,4 +211,4 @@ export default function Footera({ menuh, sForm, dissub }) {
       </div>
     </footer>
   );
-}
+});
