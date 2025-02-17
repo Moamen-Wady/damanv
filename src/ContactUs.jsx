@@ -13,7 +13,6 @@ export default memo(function Contactus({ scrollToHash, sForm, dissub }) {
           </picture>
           <p>Required Informations</p>
           <form
-            action="submit.php"
             method="post"
             id="contactForm"
             onSubmit={sForm}
