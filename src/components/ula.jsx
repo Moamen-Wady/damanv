@@ -1,4 +1,4 @@
-/*#view, #hide, #mobul and .img DON'T have a in the beginning of them*/
+/* for future editing: #view, #hide, #mobul and .img DON'T have a in the beginning of them like all other arabic versions*/
 import { memo } from "react";
 import "./navbar.css";
 import { Link } from "react-router-dom";

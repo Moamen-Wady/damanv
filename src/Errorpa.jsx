@@ -1,6 +1,4 @@
-import { memo } from "react";
-
-export default memo(function Errorpa() {
+export default function Errorpa() {
   const styles = {
     container: {
       display: "flex",
@@ -22,4 +20,4 @@ export default memo(function Errorpa() {
       <h1 style={styles.text}>الصفحة غير موجودة 404</h1>
     </div>
   );
-});
+}

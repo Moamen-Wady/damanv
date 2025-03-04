@@ -1,38 +1,24 @@
-import { memo } from "react";
-
-export default memo(function Loading() {
+export default function Loading() {
   const styles = {
     container: {
       display: "flex",
       justifyContent: "center",
       alignItems: "center",
-      height: "auto",
+      height: "100vh",
       backgroundColor: "transparent",
       padding: "0 ",
       flexDirection: "column",
-      position: "absolute",
-      top: "50%",
-      left: "50%",
-      transform: "translate(-50%,-50%)",
-    },
-    text: {
-      fontSize: "5vw",
-      color: "white",
-      fontFamily: " 'El Messiri', sans-serif",
-      padding: "0",
-      margin: "0",
     },
     img: {
       width: "12vw",
       height: "12vw",
       display: "block",
-      margin: "auto",
+      margin: "0",
     },
   };
   return (
     <div style={styles.container}>
       <img src="loading.gif" alt="Loading" style={styles.img} />
-      <h1 style={styles.text}>Loading...</h1>
     </div>
   );
-});
+}

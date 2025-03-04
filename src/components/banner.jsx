@@ -2,8 +2,7 @@ import Slider from "react-slick";
 import "./banner.css";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { memo } from "react";
-export default memo(function Banner() {
+export default function Banner() {
   const PrevArrow = (props) => {
     const { onClick } = props;
     return (
@@ -67,4 +66,4 @@ export default memo(function Banner() {
       </Slider>
     </div>
   );
-});
+}
