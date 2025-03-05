@@ -3,7 +3,7 @@ import "../styles/contact.css";
 import { Link } from "react-router-dom";
 import { useLayoutEffect, memo } from "react";
 
-export default memo(function Footera({ menuh, sForm, dissub }) {
+export default memo(function Footera({ sForm, buttonState }) {
   useLayoutEffect(() => {
     const handleOrientationChange = () => {
       if (window.innerWidth > 768) {
@@ -82,11 +82,11 @@ export default memo(function Footera({ menuh, sForm, dissub }) {
                 <input
                   type="submit"
                   value="Submit"
-                  disabled={dissub[0]}
+                  disabled={buttonState[0]}
                   style={{
-                    backgroundColor: dissub[2],
-                    pointerEvents: dissub[1],
-                    color: dissub[3],
+                    backgroundColor: buttonState[2],
+                    pointerEvents: buttonState[1],
+                    color: buttonState[3],
                   }}
                 />
               </form>
@@ -153,22 +153,22 @@ export default memo(function Footera({ menuh, sForm, dissub }) {
 
           <ul className="aful">
             <li className="axl">
-              <Link onClick={menuh} to="/#mm" className="afll">
+              <Link to="/#mm" className="afll">
                 <p>الصفحة الرئيسية</p>
               </Link>
             </li>
             <li className="axl">
-              <Link onClick={menuh} to="/Services#mm" className="afll">
+              <Link to="/Services#mm" className="afll">
                 <p>الخدمات</p>
               </Link>
             </li>
             <li className="axl">
-              <Link onClick={menuh} to="/Aboutus#mm" className="afll">
+              <Link to="/Aboutus#mm" className="afll">
                 <p>اعرف عنا</p>
               </Link>
             </li>
             <li className="axl">
-              <Link onClick={menuh} to="/Contactus#mm" className="afll">
+              <Link to="/Contactus#mm" className="afll">
                 <p>تواصل معنا الاّن</p>
               </Link>
             </li>

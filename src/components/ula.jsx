@@ -47,23 +47,23 @@ export default memo(function Ula({ menuh, menuv }) {
           </picture>
           <ul className="amob ul1" id="mobul">
             <li className="amob al">
-              <Link onClick={menuh} to="/#mm" className="amob all">
+              <Link  to="/#mm" className="amob all">
                 <p>الصفحة الرئيسية</p>
               </Link>
             </li>
             <li className="amob al">
-              <Link onClick={menuh} to="/Services#mm" className="amob all">
+              <Link  to="/Services#mm" className="amob all">
                 <p>الخدمات</p>
               </Link>
             </li>
             <li className="amob al">
-              <Link onClick={menuh} to="/Aboutus#mm" className="amob all">
+              <Link  to="/Aboutus#mm" className="amob all">
                 <p>اعرف عنا</p>
               </Link>
             </li>
             <li className="amob al">
               <Link
-                onClick={menuh}
+                
                 to="/Contactus#container"
                 className="amob all"
               >

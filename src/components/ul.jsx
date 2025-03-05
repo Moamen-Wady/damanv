@@ -46,23 +46,23 @@ export default memo(function Ul({ menuh, menuv }) {
           </picture>
           <ul className="mob ul1" id="mobul">
             <li className="mob l">
-              <Link onClick={menuh} to="/#mm" className="mob ll">
+              <Link  to="/#mm" className="mob ll">
                 <p>Home</p>
               </Link>
             </li>
             <li className="mob l">
-              <Link onClick={menuh} to="/Services#mm" className="mob ll">
+              <Link  to="/Services#mm" className="mob ll">
                 <p>Services</p>
               </Link>
             </li>
             <li className="mob l">
-              <Link onClick={menuh} to="/Aboutus#mm" className="mob ll">
+              <Link  to="/Aboutus#mm" className="mob ll">
                 <p>About Us</p>
               </Link>
             </li>
             <li className="mob l">
               <Link
-                onClick={menuh}
+                
                 to="/Contactus#container"
                 className="mob ll"
               >

@@ -3,7 +3,7 @@ import "../styles/contact.css";
 import { Link } from "react-router-dom";
 import { useLayoutEffect, memo } from "react";
 
-export default memo(function Footer({ menuh, sForm, dissub }) {
+export default memo(function Footer({ sForm, buttonState }) {
   useLayoutEffect(() => {
     const handleOrientationChange = () => {
       if (window.innerWidth > 768) {
@@ -81,11 +81,11 @@ export default memo(function Footer({ menuh, sForm, dissub }) {
                 <input
                   type="submit"
                   value="Submit"
-                  disabled={dissub[0]}
+                  disabled={buttonState[0]}
                   style={{
-                    backgroundColor: dissub[2],
-                    pointerEvents: dissub[1],
-                    color: dissub[3],
+                    backgroundColor: buttonState[2],
+                    pointerEvents: buttonState[1],
+                    color: buttonState[3],
                   }}
                 />
               </form>
@@ -152,22 +152,22 @@ export default memo(function Footer({ menuh, sForm, dissub }) {
 
           <ul className="ful">
             <li className="xl">
-              <Link onClick={menuh} to="/#mm" className="fll">
+              <Link to="/#mm" className="fll">
                 <p>Home</p>
               </Link>
             </li>
             <li className="xl">
-              <Link onClick={menuh} to="/Services#mm" className="fll">
+              <Link to="/Services#mm" className="fll">
                 <p>Services</p>
               </Link>
             </li>
             <li className="xl">
-              <Link onClick={menuh} to="/Aboutus#mm" className="fll">
+              <Link to="/Aboutus#mm" className="fll">
                 <p>About Us</p>
               </Link>
             </li>
             <li className="xl">
-              <Link onClick={menuh} to="/Contactus#mm" className="fll">
+              <Link to="/Contactus#mm" className="fll">
                 <p>Contact Us Now !</p>
               </Link>
             </li>

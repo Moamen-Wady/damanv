@@ -29,7 +29,7 @@ const ErrorpaP = lazy(() => import("./Errorpa"));
 
 function App() {
   const [lang, setLang] = useState(localStorage.getItem("lang") || "en");
-  const [dissub, setDissub] = useState([false, "all", "white", "black"]);
+  const [buttonState, setButtonState] = useState([false, "all", "white", "black"]);
   const [loading, setLoading] = useState(false);
 
   const setterLang = useCallback(function (x) {
@@ -39,7 +39,7 @@ function App() {
 
   const sForm = useCallback(async (e) => {
     e.preventDefault();
-    setDissub([true, "none", "grey", "black"]);
+    setButtonState([true, "none", "grey", "black"]);
     notify("info", "Please Wait...");
     const formData = new FormData(document.getElementById("form"));
     await api
@@ -48,15 +48,15 @@ function App() {
         if (data.data === "Message sent successfully!") {
           notify("success", "Message Sent Successfully!");
           document.getElementById("form").reset();
-          setDissub([false, "all", "white", "black"]);
+          setButtonState([false, "all", "white", "black"]);
         } else {
           notify("error", "Failed to Send Message, Please Try Again");
-          setDissub([false, "all", "white", "black"]);
+          setButtonState([false, "all", "white", "black"]);
         }
       })
       .catch(() => {
         notify("error", "Server Error, Please Try Again");
-        setDissub([false, "all", "white", "black"]);
+        setButtonState([false, "all", "white", "black"]);
       });
   }, []);
 
@@ -105,7 +105,7 @@ function App() {
   return (
     <Router>
       <ToastContainer />
-      <RouteChangeHandler setLoading={setLoading} />
+      <RouteChangeHandler setLoading={setLoading} menuh={menuh} />
       {loading ? (
         <Loading />
       ) : (
@@ -129,7 +129,7 @@ function App() {
                   element={
                     <ContactUsP
                       scrollToHash={scrollToHash}
-                      dissub={dissub}
+                      buttonState={buttonState}
                       sForm={sForm}
                     />
                   }
@@ -148,7 +148,7 @@ function App() {
                 />
               </Routes>
               <Prefooter />
-              <Footer menuh={menuh} dissub={dissub} sForm={sForm} />
+              <Footer menuh={menuh} buttonState={buttonState} sForm={sForm} />
             </>
           ) : (
             <>
@@ -169,7 +169,7 @@ function App() {
                   element={
                     <ContactUsP
                       scrollToHash={scrollToHash}
-                      dissub={dissub}
+                      buttonState={buttonState}
                       sForm={sForm}
                     />
                   }
@@ -188,7 +188,7 @@ function App() {
                 />
               </Routes>
               <Prefootera />
-              <Footera menuh={menuh} dissub={dissub} sForm={sForm} />
+              <Footera menuh={menuh} buttonState={buttonState} sForm={sForm} />
             </>
           )}
         </Suspense>

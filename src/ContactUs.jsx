@@ -1,6 +1,6 @@
 import { useEffect, memo } from "react";
 import "./styles/contact.css";
-export default memo(function Contactus({ scrollToHash, sForm, dissub }) {
+export default memo(function Contactus({ scrollToHash, sForm, buttonState }) {
   useEffect(() => scrollToHash(), []);
 
   return (
@@ -61,11 +61,11 @@ export default memo(function Contactus({ scrollToHash, sForm, dissub }) {
             <input
               type="submit"
               value="Submit"
-              disabled={dissub[0]}
+              disabled={buttonState[0]}
               style={{
-                backgroundColor: dissub[2],
-                pointerEvents: dissub[1],
-                color: dissub[3],
+                backgroundColor: buttonState[2],
+                pointerEvents: buttonState[1],
+                color: buttonState[3],
               }}
             />
           </form>
