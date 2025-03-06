@@ -66,8 +66,8 @@ export default memo(function Aboutusa({ scrollToHash }) {
             </AnimationOnScroll>
           </ul>
           <picture>
-            <source srcSet="about-us.webp" type="image/webp" />
-            <img src="about-us.jpg" alt="" loading="lazy" />
+            <source srcSet="/about-us.webp" type="image/webp" />
+            <img src="/about-us.jpg" alt="" loading="lazy" />
           </picture>
         </div>
 

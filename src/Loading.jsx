@@ -18,7 +18,7 @@ export default function Loading() {
   };
   return (
     <div style={styles.container}>
-      <img src="loading.gif" alt="Loading" style={styles.img} />
+      <img src="/loading.gif" alt="Loading" style={styles.img} />
     </div>
   );
 }

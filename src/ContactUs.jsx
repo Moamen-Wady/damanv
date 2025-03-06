@@ -8,8 +8,8 @@ export default memo(function Contactus({ scrollToHash, sForm, buttonState }) {
       <div id="container">
         <div className="form" id="form" method="post">
           <picture>
-            <source srcSet="logo.webp" type="image/webp" />
-            <img src="logo.png" alt="" loading="lazy" />
+            <source srcSet="/logo.webp" type="image/webp" />
+            <img src="/logo.png" alt="" loading="lazy" />
           </picture>
           <p>Required Informations</p>
           <form

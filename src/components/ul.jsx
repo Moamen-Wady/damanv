@@ -6,8 +6,8 @@ export default memo(function Ul({ menuh, menuv }) {
     <>
       <ul className="dsk ul1">
         <picture>
-          <source srcSet="logo.webp" type="image/webp" />
-          <img className="dsk img1" src="logo.png" alt="" loading="lazy" />
+          <source srcSet="/logo.webp" type="image/webp" />
+          <img className="dsk img1" src="/logo.png" alt="" loading="lazy" />
         </picture>
         <li className="dsk l">
           <Link to="/#mm" className="dsk ll">
@@ -33,16 +33,16 @@ export default memo(function Ul({ menuh, menuv }) {
       <div id="mob">
         <div>
           <picture>
-            <source srcSet="mbar.webp" type="image/webp" />
-            <img src="mbar.png" alt="" id="hide" onClick={menuh} />
+            <source srcSet="/mbar.webp" type="image/webp" />
+            <img src="/mbar.png" alt="" id="hide" onClick={menuh} />
           </picture>
           <picture>
-            <source srcSet="mbar.webp" type="image/webp" />
-            <img src="mbar.png" alt="" id="view" onClick={menuv} />
+            <source srcSet="/mbar.webp" type="image/webp" />
+            <img src="/mbar.png" alt="" id="view" onClick={menuv} />
           </picture>
           <picture>
-            <source srcSet="logo.webp" type="image/webp" />
-            <img className="mob img1" src="logo.png" alt="" loading="lazy" />
+            <source srcSet="/logo.webp" type="image/webp" />
+            <img className="mob img1" src="/logo.png" alt="" loading="lazy" />
           </picture>
           <ul className="mob ul1" id="mobul">
             <li className="mob l">

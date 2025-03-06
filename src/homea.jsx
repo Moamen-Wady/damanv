@@ -21,9 +21,9 @@ export default memo(function Homea({ scrollToHash }) {
               >
                 <h1>التصاريح الأمنية</h1>
                 <picture>
-                  <source srcSet="security1.webp" type="image/webp" />
+                  <source srcSet="/security1.webp" type="image/webp" />
                   <img
-                    src="security1.png"
+                    src="/security1.png"
                     loading="lazy"
                     alt="Security clearances"
                   />
@@ -43,9 +43,9 @@ export default memo(function Homea({ scrollToHash }) {
               >
                 <h1>إنشاء مرفق</h1>
                 <picture>
-                  <source srcSet="facility.webp" type="image/webp" />
+                  <source srcSet="/facility.webp" type="image/webp" />
                   <img
-                    src="facility.jpg"
+                    src="/facility.jpg"
                     loading="lazy"
                     alt="Facility establishing"
                   />
@@ -65,9 +65,9 @@ export default memo(function Homea({ scrollToHash }) {
               >
                 <h1>الاقامة</h1>
                 <picture>
-                  <source srcSet="residence1.webp" type="image/webp" />
+                  <source srcSet="/residence1.webp" type="image/webp" />
                   <img
-                    src="residence1.png"
+                    src="/residence1.png"
                     loading="lazy"
                     alt="residence visa extracting"
                   />
@@ -102,8 +102,8 @@ export default memo(function Homea({ scrollToHash }) {
           </div>
           <div className="nos2">
             <picture>
-              <source srcSet="5.webp" type="image/webp" />
-              <img src="5.jpg" loading="lazy" alt="" />
+              <source srcSet="/5.webp" type="image/webp" />
+              <img src="/5.jpg" loading="lazy" alt="" />
             </picture>
           </div>
         </div>
@@ -130,8 +130,8 @@ export default memo(function Homea({ scrollToHash }) {
           </div>
           <div className="nos2">
             <picture>
-              <source srcSet="6.webp" type="image/webp" />
-              <img src="6.jpg" loading="lazy" alt="" />
+              <source srcSet="/6.webp" type="image/webp" />
+              <img src="/6.jpg" loading="lazy" alt="" />
             </picture>
           </div>
         </div>
@@ -140,9 +140,9 @@ export default memo(function Homea({ scrollToHash }) {
         <AnimationOnScroll animateOnce={true} animateIn="animate__fadeIn">
           <div className="aidea">
             <picture>
-              <source srcSet="idea.webp" type="image/webp" />
+              <source srcSet="/idea.webp" type="image/webp" />
               <img
-                src="idea.jpg"
+                src="/idea.jpg"
                 loading="lazy"
                 alt="Motivational Business Quote"
               />
@@ -158,8 +158,8 @@ export default memo(function Homea({ scrollToHash }) {
           <div className="avismis">
             <div className="anos">
               <picture>
-                <source srcSet="light.webp" type="image/webp" />
-                <img src="light.png" loading="lazy" alt="" />
+                <source srcSet="/light.webp" type="image/webp" />
+                <img src="/light.png" loading="lazy" alt="" />
               </picture>
               <h1>رؤيتنا</h1>
               <p>
@@ -175,8 +175,8 @@ export default memo(function Homea({ scrollToHash }) {
             </div>
             <div className="anos">
               <picture>
-                <source srcSet="target.webp" type="image/webp" />
-                <img src="target.png" loading="lazy" alt="" />
+                <source srcSet="/target.webp" type="image/webp" />
+                <img src="/target.png" loading="lazy" alt="" />
               </picture>
               <h1>مهمتنا</h1>
               <p>
@@ -206,8 +206,8 @@ export default memo(function Homea({ scrollToHash }) {
               >
                 <div>
                   <picture>
-                    <source srcSet="5tama.webp" type="image/webp" />
-                    <img src="5tama.png" loading="lazy" alt="" />
+                    <source srcSet="/5tama.webp" type="image/webp" />
+                    <img src="/5tama.png" loading="lazy" alt="" />
                   </picture>
                   <h1>خدمات د.أ.أ </h1>
                   <p>د.أ.أ اختصار دائرة التنمية الاقتصادية ، دبي.</p>
@@ -221,8 +221,8 @@ export default memo(function Homea({ scrollToHash }) {
               >
                 <div>
                   <picture>
-                    <source srcSet="visa.webp" type="image/webp" />
-                    <img src="visa.png" loading="lazy" alt="" />
+                    <source srcSet="/visa.webp" type="image/webp" />
+                    <img src="/visa.png" loading="lazy" alt="" />
                   </picture>
                   <h1>خدمات الفيزا في الامارات </h1>
                   <p>
@@ -240,8 +240,8 @@ export default memo(function Homea({ scrollToHash }) {
               >
                 <div>
                   <picture>
-                    <source srcSet="hi.webp" type="image/webp" />
-                    <img src="hi.png" loading="lazy" alt="" />
+                    <source srcSet="/hi.webp" type="image/webp" />
+                    <img src="/hi.png" loading="lazy" alt="" />
                   </picture>
                   <h1>التأمين الصحي في الامارات</h1>
                   <p>
@@ -260,8 +260,8 @@ export default memo(function Homea({ scrollToHash }) {
               >
                 <div>
                   <picture>
-                    <source srcSet="tasheel.webp" type="image/webp" />
-                    <img src="tasheel.png" loading="lazy" alt="" />
+                    <source srcSet="/tasheel.webp" type="image/webp" />
+                    <img src="/tasheel.png" loading="lazy" alt="" />
                   </picture>
                   <h1>خدمات تسهيل</h1>
                   <p>
@@ -280,8 +280,8 @@ export default memo(function Homea({ scrollToHash }) {
               >
                 <div>
                   <picture>
-                    <source srcSet="bs.webp" type="image/webp" />
-                    <img src="bs.png" loading="lazy" alt="" />
+                    <source srcSet="/bs.webp" type="image/webp" />
+                    <img src="/bs.png" loading="lazy" alt="" />
                   </picture>
                   <h1>إعداد الأعمال</h1>
                   <p>
@@ -299,8 +299,8 @@ export default memo(function Homea({ scrollToHash }) {
               >
                 <div>
                   <picture>
-                    <source srcSet="id.webp" type="image/webp" />
-                    <img src="id.png" loading="lazy" alt="" />
+                    <source srcSet="/id.webp" type="image/webp" />
+                    <img src="/id.png" loading="lazy" alt="" />
                   </picture>
                   <h1>خدمات الهوية الإماراتية</h1>
                   <p>
@@ -334,8 +334,8 @@ export default memo(function Homea({ scrollToHash }) {
               <div className="aadvgrid">
                 <div>
                   <picture>
-                    <source srcSet="star.webp" type="image/webp" />
-                    <img src="star.png" loading="lazy" alt="" />
+                    <source srcSet="/star.webp" type="image/webp" />
+                    <img src="/star.png" loading="lazy" alt="" />
                   </picture>
                   <p>
                     الخبرة <br /> <br /> نحن الاختيار المناسب لمشروعك. لدينا
@@ -344,8 +344,8 @@ export default memo(function Homea({ scrollToHash }) {
                 </div>
                 <div>
                   <picture>
-                    <source srcSet="dollar.webp" type="image/webp" />
-                    <img src="dollar.png" loading="lazy" alt="" />
+                    <source srcSet="/dollar.webp" type="image/webp" />
+                    <img src="/dollar.png" loading="lazy" alt="" />
                   </picture>
                   <p>
                     السعر <br /> <br /> نحن نقدم خدماتنا بسعر صادق لضمان قدرتنا
@@ -354,8 +354,8 @@ export default memo(function Homea({ scrollToHash }) {
                 </div>
                 <div>
                   <picture>
-                    <source srcSet="ear.webp" type="image/webp" />
-                    <img src="ear.png" loading="lazy" alt="" />
+                    <source srcSet="/ear.webp" type="image/webp" />
+                    <img src="/ear.png" loading="lazy" alt="" />
                   </picture>
                   <p>
                     التواصل <br /> <br /> معنا ستسمع. نستمع إلى متطلبات عملائنا
@@ -364,8 +364,8 @@ export default memo(function Homea({ scrollToHash }) {
                 </div>
                 <div>
                   <picture>
-                    <source srcSet="hand.webp" type="image/webp" />
-                    <img src="hand.png" loading="lazy" alt="" />
+                    <source srcSet="/hand.webp" type="image/webp" />
+                    <img src="/hand.png" loading="lazy" alt="" />
                   </picture>
                   <p>
                     التعاون <br /> <br /> نحن نهتم بعملك على أنه أعمالنا الخاصة.

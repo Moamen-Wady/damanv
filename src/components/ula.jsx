@@ -7,8 +7,8 @@ export default memo(function Ula({ menuh, menuv }) {
     <>
       <ul className="adsk aul1">
         <picture>
-          <source srcSet="logo.webp" type="image/webp" />
-          <img className="adsk aimg1" src="logo.png" alt="" loading="lazy" />
+          <source srcSet="/logo.webp" type="image/webp" />
+          <img className="adsk aimg1" src="/logo.png" alt="" loading="lazy" />
         </picture>
         <li className="adsk al">
           <Link to="/#mm" className="adsk all">
@@ -34,16 +34,16 @@ export default memo(function Ula({ menuh, menuv }) {
       <div id="amob">
         <div>
           <picture>
-            <source srcSet="mbar.webp" type="image/webp" />
-            <img src="mbar.png" alt="" id="hide" onClick={menuh} />
+            <source srcSet="/mbar.webp" type="image/webp" />
+            <img src="/mbar.png" alt="" id="hide" onClick={menuh} />
           </picture>
           <picture>
-            <source srcSet="mbar.webp" type="image/webp" />
-            <img src="mbar.png" alt="" id="view" onClick={menuv} />
+            <source srcSet="/mbar.webp" type="image/webp" />
+            <img src="/mbar.png" alt="" id="view" onClick={menuv} />
           </picture>
           <picture>
-            <source srcSet="logo.webp" type="image/webp" />
-            <img className="amob img1" src="logo.png" alt="" loading="lazy" />
+            <source srcSet="/logo.webp" type="image/webp" />
+            <img className="amob img1" src="/logo.png" alt="" loading="lazy" />
           </picture>
           <ul className="amob ul1" id="mobul">
             <li className="amob al">

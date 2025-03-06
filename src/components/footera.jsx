@@ -33,7 +33,7 @@ export default memo(function Footera({ sForm, buttonState }) {
           <div className="container" id="contactCont">
             <div className="form">
               <picture>
-                <source srcSet="logo.webp" type="image/webp" />
+                <source srcSet="/logo.webp" type="image/webp" />
                 <img src="/logo.png" loading="lazy" alt="" />
               </picture>
               <p>Required Informations</p>
@@ -106,8 +106,8 @@ export default memo(function Footera({ sForm, buttonState }) {
         <div className="aportion">
           <div className="algsf">
             <picture>
-              <source srcSet="logo.webp" type="image/webp" />
-              <img className="aimx" src="logo.png" loading="lazy" alt="" />
+              <source srcSet="/logo.webp" type="image/webp" />
+              <img className="aimx" src="/logo.png" loading="lazy" alt="" />
             </picture>
             <a
               href="https://www.facebook.com/damansolution?mibextid=LQQJ4d"
@@ -115,8 +115,8 @@ export default memo(function Footera({ sForm, buttonState }) {
               rel="noreferrer"
             >
               <picture>
-                <source srcSet="fb.webp" type="image/webp" />
-                <img src="fb.png" loading="lazy" alt="" />
+                <source srcSet="/fb.webp" type="image/webp" />
+                <img src="/fb.png" loading="lazy" alt="" />
               </picture>
             </a>
             <a
@@ -125,8 +125,8 @@ export default memo(function Footera({ sForm, buttonState }) {
               rel="noreferrer"
             >
               <picture>
-                <source srcSet="ig.webp" type="image/webp" />
-                <img src="ig.png" loading="lazy" alt="" />
+                <source srcSet="/ig.webp" type="image/webp" />
+                <img src="/ig.png" loading="lazy" alt="" />
               </picture>
             </a>
             <a
@@ -135,8 +135,8 @@ export default memo(function Footera({ sForm, buttonState }) {
               rel="noreferrer"
             >
               <picture>
-                <source srcSet="li.webp" type="image/webp" />
-                <img src="li.png" loading="lazy" alt="" />
+                <source srcSet="/li.webp" type="image/webp" />
+                <img src="/li.png" loading="lazy" alt="" />
               </picture>
             </a>
             <a
@@ -145,8 +145,8 @@ export default memo(function Footera({ sForm, buttonState }) {
               rel="noreferrer"
             >
               <picture>
-                <source srcSet="tw.webp" type="image/webp" />
-                <img src="tw.png" loading="lazy" alt="" />
+                <source srcSet="/tw.webp" type="image/webp" />
+                <img src="/tw.png" loading="lazy" alt="" />
               </picture>
             </a>
           </div>
@@ -184,23 +184,23 @@ export default memo(function Footera({ sForm, buttonState }) {
             </p>
             <p>
               <picture>
-                <source srcSet="location.webp" type="image/webp" />
-                <img src="location.png" loading="lazy" alt="location" /> مركز
+                <source srcSet="/location.webp" type="image/webp" />
+                <img src="/location.png" loading="lazy" alt="location" /> مركز
                 الأعمال 1 ، طابق الميزانين ، فندق الميدان ، ند الشبا ، دبي ،
                 الإمارات العربية المتحدة.
               </picture>
             </p>
             <p>
               <picture>
-                <source srcSet="phone.webp" type="image/webp" />
-                <img src="phone.png" loading="lazy" alt="phone" />
+                <source srcSet="/phone.webp" type="image/webp" />
+                <img src="/phone.png" loading="lazy" alt="phone" />
                 <a href="tel:0547807870">0547807870</a>
               </picture>
             </p>
             <p>
               <picture>
-                <source srcSet="mail.webp" type="image/webp" />
-                <img src="mail.png" loading="lazy" alt="mail" />
+                <source srcSet="/mail.webp" type="image/webp" />
+                <img src="/mail.png" loading="lazy" alt="mail" />
                 <a href="mailto:Info@damansolutions.com">
                   Info@damansolutions.com
                 </a>

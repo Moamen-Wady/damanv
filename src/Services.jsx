@@ -20,8 +20,8 @@ export default memo(function Services({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="5tama.webp" type="image/webp" />
-                  <img src="5tama.png" loading="lazy" alt="" />
+                  <source srcSet="/5tama.webp" type="image/webp" />
+                  <img src="/5tama.png" loading="lazy" alt="" />
                 </picture>
                 <h1>DED Services</h1>
                 <p>
@@ -38,8 +38,8 @@ export default memo(function Services({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="visa.webp" type="image/webp" />
-                  <img src="visa.png" loading="lazy" alt="" />
+                  <source srcSet="/visa.webp" type="image/webp" />
+                  <img src="/visa.png" loading="lazy" alt="" />
                 </picture>
                 <h1>Visa Services In UAE</h1>
                 <p>
@@ -57,8 +57,8 @@ export default memo(function Services({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="hi.webp" type="image/webp" />
-                  <img src="hi.png" loading="lazy" alt="" />
+                  <source srcSet="/hi.webp" type="image/webp" />
+                  <img src="/hi.png" loading="lazy" alt="" />
                 </picture>
                 <h1>UAE Health Insurance</h1>
                 <p>
@@ -77,8 +77,8 @@ export default memo(function Services({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="tasheel.webp" type="image/webp" />
-                  <img src="tasheel.png" loading="lazy" alt="" />
+                  <source srcSet="/tasheel.webp" type="image/webp" />
+                  <img src="/tasheel.png" loading="lazy" alt="" />
                 </picture>
                 <h1>Tasheel Services</h1>
                 <p>
@@ -97,8 +97,8 @@ export default memo(function Services({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="bs.webp" type="image/webp" />
-                  <img src="bs.png" loading="lazy" alt="" />
+                  <source srcSet="/bs.webp" type="image/webp" />
+                  <img src="/bs.png" loading="lazy" alt="" />
                 </picture>
                 <h1>Business Setup</h1>
                 <p>
@@ -116,8 +116,8 @@ export default memo(function Services({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="id.webp" type="image/webp" />
-                  <img src="id.png" loading="lazy" alt="" />
+                  <source srcSet="/id.webp" type="image/webp" />
+                  <img src="/id.png" loading="lazy" alt="" />
                 </picture>
                 <h1>UAE ID Services</h1>
                 <p>

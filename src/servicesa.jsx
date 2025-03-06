@@ -20,8 +20,8 @@ export default memo(function Servicesa({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="5tama.webp" type="image/webp" />
-                  <img src="5tama.png" loading="lazy" alt="" />
+                  <source srcSet="/5tama.webp" type="image/webp" />
+                  <img src="/5tama.png" loading="lazy" alt="" />
                 </picture>
                 <h1>خدمات د.أ.أ </h1>
                 <p>د.أ.أ اختصار دائرة التنمية الاقتصادية ، دبي.</p>
@@ -35,8 +35,8 @@ export default memo(function Servicesa({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="visa.webp" type="image/webp" />
-                  <img src="visa.png" loading="lazy" alt="" />
+                  <source srcSet="/visa.webp" type="image/webp" />
+                  <img src="/visa.png" loading="lazy" alt="" />
                 </picture>
                 <h1>خدمات الفيزا في الامارات </h1>
                 <p>
@@ -54,8 +54,8 @@ export default memo(function Servicesa({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="hi.webp" type="image/webp" />
-                  <img src="hi.png" loading="lazy" alt="" />
+                  <source srcSet="/hi.webp" type="image/webp" />
+                  <img src="/hi.png" loading="lazy" alt="" />
                 </picture>
                 <h1>التأمين الصحي في الامارات</h1>
                 <p>
@@ -74,8 +74,8 @@ export default memo(function Servicesa({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="tasheel.webp" type="image/webp" />
-                  <img src="tasheel.png" loading="lazy" alt="" />
+                  <source srcSet="/tasheel.webp" type="image/webp" />
+                  <img src="/tasheel.png" loading="lazy" alt="" />
                 </picture>
                 <h1>خدمات تسهيل</h1>
                 <p>
@@ -94,8 +94,8 @@ export default memo(function Servicesa({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="bs.webp" type="image/webp" />
-                  <img src="bs.png" loading="lazy" alt="" />
+                  <source srcSet="/bs.webp" type="image/webp" />
+                  <img src="/bs.png" loading="lazy" alt="" />
                 </picture>
                 <h1>إعداد الأعمال</h1>
                 <p>
@@ -113,8 +113,8 @@ export default memo(function Servicesa({ scrollToHash }) {
             >
               <div>
                 <picture>
-                  <source srcSet="id.webp" type="image/webp" />
-                  <img src="id.png" loading="lazy" alt="" />
+                  <source srcSet="/id.webp" type="image/webp" />
+                  <img src="/id.png" loading="lazy" alt="" />
                 </picture>
                 <h1>خدمات الهوية الإماراتية</h1>
                 <p>

@@ -11,8 +11,8 @@ export default memo(function Navbar({ setterLang }) {
             <div className="lang">
               <span>
                 <picture>
-                  <source srcSet="uk.webp" type="image/webp" />
-                  <img src="uk.png" alt="" loading="lazy" />
+                  <source srcSet="/uk.webp" type="image/webp" />
+                  <img src="/uk.png" alt="" loading="lazy" />
                 </picture>
               </span>
               <div className="langc">
@@ -30,8 +30,8 @@ export default memo(function Navbar({ setterLang }) {
               rel="noreferrer"
             >
               <picture>
-                <source srcSet="fb.webp" type="image/webp" />
-                <img src="fb.png" alt="" loading="lazy" />
+                <source srcSet="/fb.webp" type="image/webp" />
+                <img src="/fb.png" alt="" loading="lazy" />
               </picture>
             </a>
             <a
@@ -40,8 +40,8 @@ export default memo(function Navbar({ setterLang }) {
               rel="noreferrer"
             >
               <picture>
-                <source srcSet="ig.webp" type="image/webp" />
-                <img src="ig.png" alt="" loading="lazy" />
+                <source srcSet="/ig.webp" type="image/webp" />
+                <img src="/ig.png" alt="" loading="lazy" />
               </picture>
             </a>
             <a
@@ -50,8 +50,8 @@ export default memo(function Navbar({ setterLang }) {
               rel="noreferrer"
             >
               <picture>
-                <source srcSet="li.webp" type="image/webp" />
-                <img src="li.png" alt="" loading="lazy" />
+                <source srcSet="/li.webp" type="image/webp" />
+                <img src="/li.png" alt="" loading="lazy" />
               </picture>
             </a>
             <a
@@ -60,8 +60,8 @@ export default memo(function Navbar({ setterLang }) {
               rel="noreferrer"
             >
               <picture>
-                <source srcSet="tw.webp" type="image/webp" />
-                <img src="tw.png" alt="" loading="lazy" />
+                <source srcSet="/tw.webp" type="image/webp" />
+                <img src="/tw.png" alt="" loading="lazy" />
               </picture>
             </a>
           </div>
