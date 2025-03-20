@@ -36,14 +36,17 @@ export default function Banner() {
     {
       img: "/1.webp",
       fallback: "/1.jpg",
+      loading: "eager",
     },
     {
       img: "/2.webp",
       fallback: "/2.jpg",
+      loading: "lazy",
     },
     {
       img: "/3.webp",
       fallback: "/3.jpg",
+      loading: "lazy",
     },
   ];
 
@@ -58,7 +61,7 @@ export default function Banner() {
                 className="slide-image"
                 src={slide.fallback}
                 alt={`Slide ${index + 1}`}
-                loading="lazy"
+                loading={slide.loading}
               />
             </picture>
           </div>
