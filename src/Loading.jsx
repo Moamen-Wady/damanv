@@ -9,16 +9,18 @@ export default function Loading() {
       padding: "0 ",
       flexDirection: "column",
     },
-    img: {
-      width: "12vw",
-      height: "12vw",
+    vid: {
+      width: "20vw",
+      height: "20vw",
       display: "block",
       margin: "0",
     },
   };
   return (
     <div style={styles.container}>
-      <img src="/loading.gif" alt="Loading" style={styles.img} />
+      <video autoPlay loop muted playsInline style={styles.vid}>
+        <source src="/loading.webm" type="video/webm" />
+      </video>
     </div>
   );
 }
